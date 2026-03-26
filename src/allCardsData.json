@@ -1,0 +1,5099 @@
+{
+  "meta": {
+    "version": "2.0",
+    "description": "Merged card catalog for UNICORN.CEO — supports EASY, NORMAL, HARD difficulties",
+    "distribution_logic_hard": {
+      "CRISI": "100% Hard — the crisis type changes structurally",
+      "ETICO": "100% Hard — ethical tensions have no easy way out",
+      "COMP": "75% Hard — the rival has different strategies, not just more aggressive ones",
+      "ECO": "78% Hard — complementors have much higher bargaining power",
+      "TEAM": "40% Hard — universal problems, only the resource context changes",
+      "OPP": "100% Hard — opportunities are rare and often traps",
+      "CFO": "0% Hard — the academic tutorial is independent of difficulty"
+    },
+    "easy_config": {
+      "cash": 150,
+      "kfactor": 0.9,
+      "churn": 60,
+      "description": "Easy: growth and governance dilemmas, not survival ones"
+    }
+  },
+  "cards": [
+    {
+      "id": "CFO-001",
+      "cat": "CFO",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": true,
+      "nome": "CFO #01 — Cold Start Problem",
+      "scenario": "The platform is empty. Without users there are no creators/customers, without creators/customers there are no users. You need to break this loop.",
+      "sx": {
+        "testo": "—",
+        "effetti": {}
+      },
+      "dx": {
+        "testo": "Understood",
+        "effetti": {
+          "note": "Unlocks Expanded Team slot. Current K-factor shown in dashboard."
+        }
+      },
+      "swipeable": false,
+      "concept": "Cold start problem (Parker & Van Alstyne, 2016)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "CFO-002",
+      "cat": "CFO",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "CFO #02 — The K-factor",
+      "scenario": "K-factor < 1: each user brings in less than one new user. K-factor > 1: the platform grows on its own. Are you below or above the threshold?",
+      "sx": {
+        "testo": "—",
+        "effetti": {}
+      },
+      "dx": {
+        "testo": "Understood",
+        "effetti": {
+          "note": "K-factor visible in dashboard. Updated every turn."
+        }
+      },
+      "swipeable": false,
+      "concept": "Viral coefficient / K-factor (Andreessen Horowitz framework)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "CFO-003",
+      "cat": "CFO",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "CFO #03 — Runway and burn rate",
+      "scenario": "You have X months of runway. Every decision you make changes the burn rate. Cash isn't infinite — it's a ticking clock.",
+      "sx": {
+        "testo": "—",
+        "effetti": {}
+      },
+      "dx": {
+        "testo": "Understood",
+        "effetti": {
+          "note": "Runway calculated dynamically. Automatic warning below 3 months."
+        }
+      },
+      "swipeable": false,
+      "concept": "Startup finance fundamentals",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "CFO-004",
+      "cat": "CFO",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "CFO #04 — Network effects",
+      "scenario": "Metcalfe's Law: the value of a network grows with the square of its users. Every added user is worth more than the last.",
+      "sx": {
+        "testo": "—",
+        "effetti": {}
+      },
+      "dx": {
+        "testo": "Understood",
+        "effetti": {
+          "kfactor": 0.05,
+          "note": "Small K-factor boost for understanding the mechanism."
+        }
+      },
+      "swipeable": false,
+      "concept": "Network effects, Metcalfe's Law (Eisenmann, Parker & Van Alstyne, 2006)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "CFO-005",
+      "cat": "CFO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": true,
+      "nome": "CFO #05 — Metcalfe's Law in action",
+      "scenario": "You have reached critical mass. Organic growth begins. From now on, every acquired user is worth more than the previous one — and costs you less.",
+      "sx": {
+        "testo": "—",
+        "effetti": {}
+      },
+      "dx": {
+        "testo": "Understood",
+        "effetti": {
+          "utenti": 1,
+          "note": "Automatic +1 Users every turn as long as K-factor > 1.0."
+        }
+      },
+      "swipeable": false,
+      "concept": "Tipping point / critical mass (Parker & Van Alstyne, 2016)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "CFO-006",
+      "cat": "CFO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "CFO #06 — Monetization",
+      "scenario": "Three models: ads (immediate cash, polarization risk), subscription (stable MRR, friction), platform fee (ecosystem alignment, low margins).",
+      "sx": {
+        "testo": "—",
+        "effetti": {}
+      },
+      "dx": {
+        "testo": "Understood",
+        "effetti": {
+          "note": "Unlocks Media Partnership slot. Primary revenue model choice."
+        }
+      },
+      "swipeable": false,
+      "concept": "Platform monetization models (Parker & Van Alstyne, 2016)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "CFO-007",
+      "cat": "CFO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "CFO #07 — Switching costs",
+      "scenario": "The higher the perceived cost of leaving, the higher the Anti-Churn. But artificial switching costs erode institutional Trust.",
+      "sx": {
+        "testo": "—",
+        "effetti": {}
+      },
+      "dx": {
+        "testo": "Understood",
+        "effetti": {
+          "note": "Anti-Churn vs Trust tension now visible in dashboard."
+        }
+      },
+      "swipeable": false,
+      "concept": "Switching costs and lock-in (Shapiro & Varian, 1999)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "CFO-008",
+      "cat": "CFO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": true,
+      "nome": "CFO #08 — Strategic slots",
+      "scenario": "Three available slots: Expanded Team (fixed), Media Partnership (contractual), Active R&D (variable). Each slot costs resources — choose wisely.",
+      "sx": {
+        "testo": "—",
+        "effetti": {}
+      },
+      "dx": {
+        "testo": "Understood",
+        "effetti": {
+          "note": "All slots now active. R&D unlockable at three levels."
+        }
+      },
+      "swipeable": false,
+      "concept": "Resource allocation under constraints",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "CFO-009",
+      "cat": "CFO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "CFO #09 — Platform governance",
+      "scenario": "You've made your second structural decision. From now on, you're not just a company — you're a private regulator. Your rules define who can do what.",
+      "sx": {
+        "testo": "—",
+        "effetti": {}
+      },
+      "dx": {
+        "testo": "Understood",
+        "effetti": {
+          "eco": 5,
+          "note": "Ecosystem Health now influences Company Value. Unlocks card CFO #10."
+        }
+      },
+      "swipeable": false,
+      "flags_set": {
+        "dx": [
+          "platform_governance_unlocked"
+        ]
+      },
+      "concept": "Platform governance (Gawer, 2022)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "CFO-010",
+      "cat": "CFO",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": true,
+      "nome": "CFO #10 — IPO Countdown",
+      "scenario": "You have 17 months. You are big enough to be a problem for someone. Foundation or bottleneck? The market is watching you.",
+      "sx": {
+        "testo": "—",
+        "effetti": {}
+      },
+      "dx": {
+        "testo": "Understood",
+        "effetti": {
+          "note": "IPO Checklist unlocked. Dynamic valuation updated in dashboard."
+        }
+      },
+      "swipeable": false,
+      "flags_required": [
+        "platform_governance_unlocked"
+      ],
+      "concept": "Foundation vs bottleneck (Jacobides, Cennamo & Gawer, 2018)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-001",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "The first engineer",
+      "scenario": "A former colleague with scaling experience asks for equity instead of a full salary. They're good, but 6% is a lot for this stage.",
+      "sx": {
+        "testo": "Full salary",
+        "effetti": {
+          "cash": -12,
+          "churn": 4,
+          "note": "Fixed monthly cost but a stable team right away."
+        }
+      },
+      "dx": {
+        "testo": "Equity deal",
+        "effetti": {
+          "churn": 8,
+          "valore": 3,
+          "note": "Long-term alignment. No monthly cost."
+        }
+      },
+      "concept": "Founder-employee equity alignment",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-002",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "The CTO wants technical freedom",
+      "scenario": "The CTO wants total autonomy over architectural choices. Do you agree, or maintain direct supervision?",
+      "sx": {
+        "testo": "Direct supervision",
+        "effetti": {
+          "churn": -4,
+          "trust": 3,
+          "note": "More control, less speed."
+        }
+      },
+      "dx": {
+        "testo": "Total autonomy",
+        "effetti": {
+          "churn": 8,
+          "utenti": 3,
+          "note": "Risk of technical debt but high development speed."
+        }
+      },
+      "concept": "Organizational autonomy vs control",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-003",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Freelance designer or full-time hire?",
+      "scenario": "The UI is poor and slows down conversion. A freelancer is fast; a full-time hire is more expensive but loyal.",
+      "sx": {
+        "testo": "Freelance",
+        "effetti": {
+          "cash": -15,
+          "utenti": 5,
+          "churn": -3
+        }
+      },
+      "dx": {
+        "testo": "Junior hire with equity",
+        "effetti": {
+          "cash": -8,
+          "utenti": 8,
+          "churn": 6
+        }
+      },
+      "concept": "Build vs buy — human capital",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-004",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The CTO threatens to leave",
+      "scenario": "Your CTO has an offer from a competitor with a 30% salary increase. Do you counteroffer or let them go?",
+      "sx": {
+        "testo": "Let them go",
+        "effetti": {
+          "churn": -12,
+          "utenti": -5,
+          "note": "Risk of losing critical know-how."
+        }
+      },
+      "dx": {
+        "testo": "Counteroffer with extra equity",
+        "effetti": {
+          "churn": 6,
+          "trust": 4,
+          "note": "The team sees that you protect key people."
+        }
+      },
+      "flags_set": {
+        "dx": [
+          "cto_retained"
+        ]
+      },
+      "concept": "Key person retention",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-005",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Team burnout",
+      "scenario": "Three months of continuous sprints. The team is showing signs of exhaustion. Do you slow down or push for the feature launch?",
+      "sx": {
+        "testo": "Push — the launch is the priority",
+        "effetti": {
+          "utenti": 6,
+          "churn": -10,
+          "note": "High risk of resignations in the next 2 turns."
+        }
+      },
+      "dx": {
+        "testo": "Slow down — team first",
+        "effetti": {
+          "churn": 10,
+          "utenti": -3,
+          "cash": -8
+        }
+      },
+      "concept": "Organizational health and sustainability",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-006",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Head of Marketing — hiring",
+      "scenario": "Organic growth is slowing down. You need someone dedicated to marketing. Budget is only available for one senior hire.",
+      "sx": {
+        "testo": "Junior growth hacker",
+        "effetti": {
+          "cash": -10,
+          "utenti": 8,
+          "kfactor": 0.05
+        }
+      },
+      "dx": {
+        "testo": "Senior CMO with a track record",
+        "effetti": {
+          "cash": -22,
+          "utenti": 14,
+          "kfactor": 0.1,
+          "valore": 8
+        }
+      },
+      "concept": "Human capital investment timing",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-007",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Co-founder conflict",
+      "scenario": "Your co-founder wants to pivot to a different market. You want to stay the course. The tension is public within the team.",
+      "sx": {
+        "testo": "Listen and adapt the vision",
+        "effetti": {
+          "churn": 4,
+          "utenti": 3,
+          "eco": -4,
+          "note": "Weak compromise, but internal peace."
+        }
+      },
+      "dx": {
+        "testo": "Stay the course — even at the cost of conflict",
+        "effetti": {
+          "churn": 8,
+          "cash": -15,
+          "note": "Legal fees for equity restructuring. A more cohesive team."
+        }
+      },
+      "concept": "Founder dynamics and governance",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-008",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "The competitor makes an offer to your team",
+      "scenario": "The competitor has contacted your three best developers. The offers are 40% higher than their current salaries.",
+      "sx": {
+        "testo": "You can't compete financially",
+        "effetti": {
+          "churn": -16,
+          "utenti": -5,
+          "note": "Operational crisis in the next 3 turns."
+        }
+      },
+      "dx": {
+        "testo": "Accelerated equity for all three",
+        "effetti": {
+          "churn": 8,
+          "valore": -5,
+          "note": "You dilute yourself, but you keep the team."
+        }
+      },
+      "concept": "Talent retention in competitive markets",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-009",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Succession — preparing the management team for IPO",
+      "scenario": "Investors want a professional CEO or at least a COO for the IPO. Are you willing to give up some operational control?",
+      "sx": {
+        "testo": "Stay as CEO — manage everything yourself",
+        "effetti": {
+          "trust": -6,
+          "valore": -8,
+          "note": "The market is skeptical about your governance."
+        }
+      },
+      "dx": {
+        "testo": "Hire a senior COO",
+        "effetti": {
+          "cash": -25,
+          "trust": 12,
+          "valore": 15,
+          "churn": 5
+        }
+      },
+      "concept": "Corporate governance and IPO readiness",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-010",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Remote or on-site?",
+      "scenario": "The team wants to work fully remote. You believe that physical proximity accelerates decisions in the early stages.",
+      "sx": {
+        "testo": "Fully remote — maximum flexibility",
+        "effetti": {
+          "churn": 6,
+          "cash": -4,
+          "utenti": 3
+        }
+      },
+      "dx": {
+        "testo": "Mandatory on-site",
+        "effetti": {
+          "churn": -4,
+          "utenti": 5,
+          "cash": -18,
+          "note": "Office costs. Some refuse and leave."
+        }
+      },
+      "concept": "Organizational design",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-011",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "OKRs or free management?",
+      "scenario": "The team has grown to 12 people. Without structure, alignment is lost. But too much structure kills speed.",
+      "sx": {
+        "testo": "Formal quarterly OKRs",
+        "effetti": {
+          "churn": 5,
+          "utenti": 4,
+          "cash": -5
+        }
+      },
+      "dx": {
+        "testo": "Informal management — trust in the team",
+        "effetti": {
+          "churn": -3,
+          "utenti": 6,
+          "note": "Risk of misalignment in Phase 3."
+        }
+      },
+      "concept": "Organizational scaling and management systems",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-TEAM-012",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Pre-IPO incentive plan",
+      "scenario": "The board wants a stock option plan to retain the key team up to and after the IPO. It costs equity but reduces the risk of an exodus.",
+      "sx": {
+        "testo": "Minimum plan — C-level only",
+        "effetti": {
+          "churn": 3,
+          "valore": -5
+        }
+      },
+      "dx": {
+        "testo": "Extended plan — the whole team",
+        "effetti": {
+          "churn": 14,
+          "valore": -12,
+          "trust": 8,
+          "note": "The market views retention positively."
+        }
+      },
+      "concept": "Employee incentive design",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ECO-001",
+      "cat": "ECO",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Open or closed APIs",
+      "scenario": "Opening APIs to external developers brings users but exposes the platform to indirect competition. Closing them guarantees control.",
+      "sx": {
+        "testo": "Closed APIs",
+        "effetti": {
+          "eco": -5,
+          "churn": 5,
+          "note": "Controlled ecosystem but slower growth."
+        }
+      },
+      "dx": {
+        "testo": "Open APIs",
+        "effetti": {
+          "eco": 15,
+          "utenti": 4,
+          "cash": -8
+        }
+      },
+      "concept": "Platform openness strategy (Eisenmann, 2008)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ECO-002",
+      "cat": "ECO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Developer conference",
+      "scenario": "You organize the first annual event for the platform's developers. It signals a commitment to the ecosystem.",
+      "sx": {
+        "testo": "Symbolic event — low budget",
+        "effetti": {
+          "eco": 6,
+          "cash": -20
+        }
+      },
+      "dx": {
+        "testo": "Flagship event",
+        "effetti": {
+          "eco": 20,
+          "utenti": 8,
+          "trust": 5,
+          "cash": -80
+        }
+      },
+      "concept": "Ecosystem cultivation and signaling",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ECO-003",
+      "cat": "ECO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Self-organized developer community",
+      "scenario": "A group of developers has created an unofficial forum. Do you want to institutionalize it or leave it independent?",
+      "sx": {
+        "testo": "Leave it independent",
+        "effetti": {
+          "eco": 8,
+          "trust": 3,
+          "note": "You lose narrative control, but authenticity is high."
+        }
+      },
+      "dx": {
+        "testo": "Institutionalize and participate",
+        "effetti": {
+          "eco": 14,
+          "trust": 8,
+          "churn": 5,
+          "cash": -12
+        }
+      },
+      "concept": "Community governance",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ECO-004",
+      "cat": "ECO",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Key complementor threatens to leave",
+      "scenario": "The developer of your most used app (9% of total users) wants better terms or they'll migrate to the competitor.",
+      "sx": {
+        "testo": "Don't yield — it's the principle",
+        "effetti": {
+          "eco": -18,
+          "utenti": -8,
+          "note": "The developer migrates. User Base drops in the next 2 turns."
+        }
+      },
+      "dx": {
+        "testo": "Negotiate and yield",
+        "effetti": {
+          "eco": 10,
+          "cash": -22,
+          "churn": 5
+        }
+      },
+      "concept": "Complementor power dynamics (Jacobides, Cennamo & Gawer, 2018)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ECO-005",
+      "cat": "ECO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Formal developer program",
+      "scenario": "You launch a formal program for developers: documentation, sandbox, dedicated support. It costs money, but signals maturity.",
+      "sx": {
+        "testo": "Not now — too early",
+        "effetti": {
+          "eco": -6,
+          "note": "Developers choose more mature platforms."
+        }
+      },
+      "dx": {
+        "testo": "Launch the developer program",
+        "effetti": {
+          "eco": 16,
+          "utenti": 6,
+          "trust": 6,
+          "cash": -35
+        }
+      },
+      "concept": "Platform ecosystem investment",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-COMP-001",
+      "cat": "COMP",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Competitor Alert — the rival is growing",
+      "scenario": "The main competitor just closed a €3M round. They are hiring aggressively in your same market.",
+      "sx": {
+        "testo": "Vertical niche — avoid the clash",
+        "effetti": {
+          "eco": 6,
+          "trust": 4,
+          "utenti": -3,
+          "note": "Defensible differentiation."
+        }
+      },
+      "dx": {
+        "testo": "Attack head-on",
+        "effetti": {
+          "cash": -30,
+          "utenti": 10,
+          "churn": -5
+        }
+      },
+      "concept": "Competitive positioning (Porter, 1980)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-COMP-002",
+      "cat": "COMP",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Multi-homing alert",
+      "scenario": "20% of your users also use a competitor platform. Do you launch a lock-in feature or remain open?",
+      "sx": {
+        "testo": "Remain open",
+        "effetti": {
+          "trust": 8,
+          "churn": -6
+        }
+      },
+      "dx": {
+        "testo": "Lock-in feature",
+        "effetti": {
+          "churn": 10,
+          "trust": -12,
+          "cash": 5,
+          "note": "Potential regulatory notice."
+        }
+      },
+      "concept": "Multi-homing and switching costs (Parker & Van Alstyne, 2016)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-COMP-003",
+      "cat": "COMP",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The competitor copies your main feature",
+      "scenario": "You've been developing a differentiating feature for 3 months. The competitor launches it first, slightly different.",
+      "sx": {
+        "testo": "Launch anyway — it was yours first",
+        "effetti": {
+          "utenti": 5,
+          "trust": 4,
+          "churn": 3
+        }
+      },
+      "dx": {
+        "testo": "Pivot towards something different",
+        "effetti": {
+          "cash": -20,
+          "eco": 8,
+          "utenti": -3,
+          "note": "Risky, but genuine differentiation."
+        }
+      },
+      "concept": "First-mover vs fast-follower dynamics",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-COMP-004",
+      "cat": "COMP",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Acquisition offer from the competitor",
+      "scenario": "The main competitor offers a figure above the estimated IPO value. Strategic Exit available.",
+      "sx": {
+        "testo": "Refuse — aim for the IPO",
+        "effetti": {
+          "valore": 35,
+          "note": "The market reads the refusal as a sign of strength. Investor Patience -10."
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "note": "Ending: Strategic Exit — Competitor."
+        }
+      },
+      "concept": "Exit strategy and valuation",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-COMP-005",
+      "cat": "COMP",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "The competitor gets massive funding",
+      "scenario": "The rival just closed a €50M Series C. You can't compete on scale. What do you do?",
+      "sx": {
+        "testo": "Vertical ultra-specialization",
+        "effetti": {
+          "eco": 10,
+          "trust": 8,
+          "utenti": -6,
+          "cash": 5
+        }
+      },
+      "dx": {
+        "testo": "Accelerate towards the IPO before them",
+        "effetti": {
+          "cash": -40,
+          "valore": 20,
+          "note": "Investor Patience -8. IPO window narrows."
+        }
+      },
+      "concept": "Competitive dynamics under asymmetric resources",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-CRISI-001",
+      "cat": "CRISI",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Bug in production",
+      "scenario": "A bug exposes metadata of 3,000 users. No direct harm, but the tech press noticed.",
+      "sx": {
+        "testo": "Quiet management",
+        "effetti": {
+          "trust": -12,
+          "cash": -5,
+          "note": "If it comes out later, the damage is doubled."
+        }
+      },
+      "dx": {
+        "testo": "Transparent communication",
+        "effetti": {
+          "trust": 8,
+          "utenti": -4,
+          "churn": 5
+        }
+      },
+      "concept": "Crisis communication and trust",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-CRISI-002",
+      "cat": "CRISI",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Antitrust investigation",
+      "scenario": "Antitrust opens an investigation into contractual lock-in practices. You have 60 days to respond.",
+      "sx": {
+        "testo": "Legal challenge",
+        "effetti": {
+          "trust": -14,
+          "cash": -60,
+          "eco": -5
+        }
+      },
+      "dx": {
+        "testo": "Proactive contract review",
+        "effetti": {
+          "trust": 10,
+          "cash": -30,
+          "churn": 6,
+          "eco": 4
+        }
+      },
+      "flags_set": {
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "concept": "Regulatory compliance and platform power",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-CRISI-003",
+      "cat": "CRISI",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Negative article on national media",
+      "scenario": "A journalist has published a critical investigation into your moderation practices. It goes viral in 48 hours.",
+      "sx": {
+        "testo": "Press silence",
+        "effetti": {
+          "trust": -10,
+          "utenti": -5,
+          "note": "The lack of response amplifies the damage."
+        }
+      },
+      "dx": {
+        "testo": "Detailed public response",
+        "effetti": {
+          "trust": 6,
+          "utenti": -2,
+          "churn": 4,
+          "cash": -8
+        }
+      },
+      "concept": "Reputation management",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-CRISI-004",
+      "cat": "CRISI",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "EU antitrust investigation — advanced stage",
+      "scenario": "The European Commission has deepened the investigation. They now ask for access to internal ranking and moderation data.",
+      "sx": {
+        "testo": "Resist — lawyers",
+        "effetti": {
+          "trust": -16,
+          "cash": -40,
+          "eco": -5,
+          "note": "Regulatory Champion path closed."
+        }
+      },
+      "dx": {
+        "testo": "Collaborate fully",
+        "effetti": {
+          "trust": 12,
+          "cash": -25,
+          "eco": 4
+        }
+      },
+      "flags_set": {
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "concept": "Digital Markets Act compliance",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-CRISI-005",
+      "cat": "CRISI",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Server crashes at launch",
+      "scenario": "Too much unexpected traffic. The platform is offline for 6 hours. The tech press notices.",
+      "sx": {
+        "testo": "Minimize publicly",
+        "effetti": {
+          "trust": -14,
+          "utenti": -8,
+          "note": "If the truth comes out later, the damage doubles."
+        }
+      },
+      "dx": {
+        "testo": "Honest communication + apology",
+        "effetti": {
+          "trust": 4,
+          "utenti": -4,
+          "churn": 6
+        }
+      },
+      "concept": "Trust-building through transparency",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-OPP-001",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "First angel round",
+      "scenario": "An angel investor offers €200K for 12% equity. Implicit valuation: €1.67M.",
+      "sx": {
+        "testo": "Refuse — too dilutive",
+        "effetti": {
+          "note": "You stay in total control. Runway unchanged."
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "cash": 200,
+          "trust": 4,
+          "valore": 8,
+          "note": "External validation."
+        }
+      },
+      "concept": "Early-stage financing and dilution",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-OPP-002",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Public R&D grant",
+      "scenario": "A ministerial call offers up to €200K non-dilutive funding for innovative tech startups. High bureaucracy.",
+      "sx": {
+        "testo": "Too much bureaucracy — skip",
+        "effetti": {
+          "note": "Save 3 turns of effort."
+        }
+      },
+      "dx": {
+        "testo": "Apply",
+        "effetti": {
+          "cash": 200,
+          "trust": 5,
+          "valore": 10,
+          "note": "3 turns of waiting."
+        }
+      },
+      "concept": "Non-dilutive funding",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-OPP-003",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "VC Round — Series A",
+      "scenario": "A VC offers €3M for 22% equity. Investor Patience activates.",
+      "sx": {
+        "testo": "Negotiate terms",
+        "effetti": {
+          "valore": 15,
+          "note": "Risk that the offer shrinks or drops."
+        }
+      },
+      "dx": {
+        "testo": "Accept at standard terms",
+        "effetti": {
+          "cash": 3000,
+          "trust": 6,
+          "note": "Investor Patience activated. 36 turns."
+        }
+      },
+      "flags_set": {
+        "dx": [
+          "investor_patience_active"
+        ]
+      },
+      "concept": "Venture capital and governance",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-OPP-004",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "National media partnership",
+      "scenario": "A large publishing group wants to distribute your content or services. Exclusive or non-exclusive?",
+      "sx": {
+        "testo": "Exclusive",
+        "effetti": {
+          "cash": 40,
+          "eco": -5,
+          "note": "Blocks other partners for 12 turns."
+        }
+      },
+      "dx": {
+        "testo": "Non-exclusive",
+        "effetti": {
+          "cash": 22,
+          "eco": 8,
+          "trust": 4,
+          "churn": 3
+        }
+      },
+      "concept": "Partnership strategy and exclusivity tradeoffs",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-OPP-005",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "International expansion",
+      "scenario": "A growth fund wants to co-finance expansion into three European markets. Debt or equity?",
+      "sx": {
+        "testo": "Stay focused — IPO first",
+        "effetti": {
+          "note": "Cleaner IPO. No debt."
+        }
+      },
+      "dx": {
+        "testo": "Expansion with debt",
+        "effetti": {
+          "cash": 500,
+          "utenti": 18,
+          "note": "Investor Patience -8. Debt to be repaid post-IPO."
+        }
+      },
+      "concept": "International expansion timing",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-OPP-006",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": true,
+      "nome": "IPO — market window",
+      "scenario": "Conditions have been met. The market is favorable. The IPO window opens.",
+      "sx": {
+        "testo": "Delay by a quarter",
+        "effetti": {
+          "valore": -15,
+          "note": "The window might close."
+        }
+      },
+      "dx": {
+        "testo": "IPO right now",
+        "effetti": {
+          "note": "Final valuation calculated on vertical-specific multiples."
+        }
+      },
+      "concept": "IPO timing and market windows",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-OPP-007",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Startup accelerator",
+      "scenario": "You've been selected for a top accelerator program. €80K for 6% and 4 months of mentorship.",
+      "sx": {
+        "testo": "Refuse — too much dilution",
+        "effetti": {
+          "note": "No advantage but equity intact."
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "cash": 80,
+          "trust": 6,
+          "churn": 5,
+          "valore": 8
+        }
+      },
+      "concept": "Accelerator value proposition",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ETICO-001",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Dark patterns in onboarding",
+      "scenario": "A dark pattern in the registration flow leads 15% of users to activate a premium subscription without wanting to. Revenues rise.",
+      "sx": {
+        "testo": "Keep the flow",
+        "effetti": {
+          "cash": 20,
+          "trust": -18,
+          "note": "Potential violation of Consumer Rights Directive."
+        }
+      },
+      "dx": {
+        "testo": "Redesign with explicit opt-in",
+        "effetti": {
+          "cash": 8,
+          "trust": 16,
+          "churn": 8,
+          "eco": 6
+        }
+      },
+      "flags_set": {
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "concept": "Dark patterns and digital ethics (Brignull, 2010)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ETICO-002",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "User data for AI training",
+      "scenario": "Your AI model would improve enormously using user behavioral data. You have contractual permission but not explicit consent.",
+      "sx": {
+        "testo": "Use the data without asking",
+        "effetti": {
+          "trust": -18,
+          "note": "GDPR violation flag. Risk of a fine."
+        }
+      },
+      "dx": {
+        "testo": "Ask for explicit consent",
+        "effetti": {
+          "trust": 14,
+          "churn": 10,
+          "cash": -5,
+          "note": "Only 65% accept, but trust grows."
+        }
+      },
+      "concept": "Data ethics and GDPR (EU Regulation 2016/679)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ETICO-003",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "AI with unintentional bias",
+      "scenario": "Your recommendation algorithm performs 20% worse on users from certain geographic areas. It's legal but biased.",
+      "sx": {
+        "testo": "Don't communicate the bias",
+        "effetti": {
+          "trust": -14,
+          "note": "If it gets out, reputation crisis."
+        }
+      },
+      "dx": {
+        "testo": "Publish the limitation and work on a fix",
+        "effetti": {
+          "trust": 12,
+          "cash": -20,
+          "churn": 8
+        }
+      },
+      "concept": "Algorithmic fairness and accountability",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ETICO-004",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Non-anonymized test data",
+      "scenario": "You used real user profiles in internal tests. Nobody knows yet, but it's a potential GDPR violation.",
+      "sx": {
+        "testo": "Let it go — nobody will know",
+        "effetti": {
+          "trust": -8,
+          "note": "Latent regulatory risk flag."
+        }
+      },
+      "dx": {
+        "testo": "Anonymize and document the process",
+        "effetti": {
+          "cash": -10,
+          "trust": 10,
+          "churn": 4
+        }
+      },
+      "concept": "Privacy by design (GDPR Art. 25)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ETICO-005",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Internal whistleblowing",
+      "scenario": "An employee has internally reported a potential violation in sales practices. Escalate or manage internally?",
+      "sx": {
+        "testo": "Manage internally — no escalation",
+        "effetti": {
+          "trust": -10,
+          "churn": 4,
+          "note": "Risk of a future leak."
+        }
+      },
+      "dx": {
+        "testo": "Formal procedure + immediate fix",
+        "effetti": {
+          "trust": 14,
+          "cash": -20,
+          "churn": 10
+        }
+      },
+      "concept": "Corporate whistleblowing and compliance",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ETICO-006",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Moderation vs freedom of expression",
+      "scenario": "A borderline piece of content is generating huge engagement. Moderating it means losing reach, leaving it means risking your reputation.",
+      "sx": {
+        "testo": "Leave the content",
+        "effetti": {
+          "utenti": 8,
+          "trust": -10,
+          "note": "Dangerous pattern if it repeats."
+        }
+      },
+      "dx": {
+        "testo": "Moderate with a clear policy",
+        "effetti": {
+          "trust": 10,
+          "utenti": -4,
+          "churn": 5,
+          "eco": 3
+        }
+      },
+      "concept": "Content moderation and platform responsibility",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ETICO-007",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Aggregated data as a secondary product",
+      "scenario": "You could sell aggregated and anonymized data to a data broker. The contracts don't explicitly forbid it.",
+      "sx": {
+        "testo": "Sell the data",
+        "effetti": {
+          "cash": 40,
+          "trust": -20,
+          "note": "If clients find out, massive churn."
+        }
+      },
+      "dx": {
+        "testo": "Refuse — it's not your model",
+        "effetti": {
+          "trust": 12,
+          "churn": 10,
+          "valore": 8
+        }
+      },
+      "concept": "Data monetization ethics",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "GEN-ETICO-008",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Hidden charges",
+      "scenario": "A premium feature activates automatically after the trial without a clear reminder. 10% of users don't notice.",
+      "sx": {
+        "testo": "Keep the mechanism",
+        "effetti": {
+          "cash": 15,
+          "trust": -16,
+          "note": "Potential violation of Consumer Rights Directive."
+        }
+      },
+      "dx": {
+        "testo": "Active pre-charge notification",
+        "effetti": {
+          "cash": 8,
+          "trust": 14,
+          "churn": 8
+        }
+      },
+      "concept": "Consumer protection and digital ethics",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-TEAM-001",
+      "cat": "TEAM",
+      "tag": "S",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Head of Community",
+      "scenario": "Manual moderation is expensive but builds trust. Algorithms scale but are less precise on community culture.",
+      "sx": {
+        "testo": "Algorithm only",
+        "effetti": {
+          "cash": -2,
+          "utenti": 2,
+          "trust": -5,
+          "note": "Scales well but community quality drops."
+        }
+      },
+      "dx": {
+        "testo": "Dedicated Head of Community",
+        "effetti": {
+          "cash": -14,
+          "trust": 10,
+          "churn": 8,
+          "eco": 4
+        }
+      },
+      "concept": "Platform governance and community management",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-TEAM-002",
+      "cat": "TEAM",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Trust & Safety team",
+      "scenario": "Cases of abuse and harassment increase with growth. Do you need a dedicated team or is the algorithm enough?",
+      "sx": {
+        "testo": "Automated tools only",
+        "effetti": {
+          "cash": -5,
+          "trust": -8,
+          "eco": -3
+        }
+      },
+      "dx": {
+        "testo": "Trust & Safety team (5 people)",
+        "effetti": {
+          "cash": -30,
+          "trust": 14,
+          "churn": 6,
+          "eco": 5
+        }
+      },
+      "concept": "Content moderation at scale",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-TEAM-003",
+      "cat": "TEAM",
+      "tag": "S",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Creator Partner Manager",
+      "scenario": "Top creators ask for a dedicated point of contact. Without one, the best migrate to platforms that treat them as partners.",
+      "sx": {
+        "testo": "Don't hire — scale with the tool",
+        "effetti": {
+          "eco": -10,
+          "churn": -5,
+          "utenti": -4
+        }
+      },
+      "dx": {
+        "testo": "Creator Partner Manager",
+        "effetti": {
+          "cash": -16,
+          "eco": 12,
+          "churn": 8,
+          "utenti": 6
+        }
+      },
+      "concept": "Complementor relationship management",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-ECO-001",
+      "cat": "ECO",
+      "tag": "S",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Creators looking for a home",
+      "scenario": "Five creators with 200K followers each want to leave a rival platform. Special or standard terms?",
+      "sx": {
+        "testo": "Standard terms",
+        "effetti": {
+          "utenti": 5,
+          "churn": 3
+        }
+      },
+      "dx": {
+        "testo": "Special terms",
+        "effetti": {
+          "utenti": 14,
+          "churn": 9,
+          "cash": -18,
+          "eco": 5
+        }
+      },
+      "concept": "Complementor seeding (Parker & Van Alstyne, 2016)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-ECO-002",
+      "cat": "ECO",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Creator commissions",
+      "scenario": "Creators are asking to raise their share from 30% to 40% of the revenue generated. They threaten to migrate.",
+      "sx": {
+        "testo": "Keep it at 30%",
+        "effetti": {
+          "eco": -12,
+          "note": "Some creators migrate to the competitor."
+        }
+      },
+      "dx": {
+        "testo": "Raise to 40%",
+        "effetti": {
+          "eco": 14,
+          "cash": -20,
+          "churn": 7,
+          "valore": -15
+        }
+      },
+      "concept": "Value sharing in platform ecosystems",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-ECO-003",
+      "cat": "ECO",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Aggressive developer program",
+      "scenario": "The competitor has launched a developer program offering a 20% revenue share. Do you respond?",
+      "sx": {
+        "testo": "Don't react right away",
+        "effetti": {
+          "eco": -6,
+          "note": "Some developers start looking elsewhere."
+        }
+      },
+      "dx": {
+        "testo": "Immediate developer program",
+        "effetti": {
+          "eco": 12,
+          "cash": -25,
+          "trust": 4
+        }
+      },
+      "concept": "Competitive ecosystem dynamics",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-ECO-004",
+      "cat": "ECO",
+      "tag": "S",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Exclusive agreement with a top creator",
+      "scenario": "The most followed creator on your platform asks for an exclusivity agreement in exchange for guaranteed compensation.",
+      "sx": {
+        "testo": "Exclusivity — block the competitor",
+        "effetti": {
+          "eco": -8,
+          "churn": 10,
+          "cash": -60,
+          "note": "Other creators see preferential treatment."
+        }
+      },
+      "dx": {
+        "testo": "Non-exclusive — open ecosystem",
+        "effetti": {
+          "eco": 8,
+          "trust": 6,
+          "cash": -30,
+          "churn": 5
+        }
+      },
+      "concept": "Exclusivity and ecosystem fairness",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-COMP-001",
+      "cat": "COMP",
+      "tag": "S",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Competitor Alert — Rival's K-factor is high",
+      "scenario": "The rival has a K-factor of 1.4. They are growing organically faster than you. Response?",
+      "sx": {
+        "testo": "Quality differentiation",
+        "effetti": {
+          "trust": 8,
+          "eco": 6,
+          "churn": 5
+        }
+      },
+      "dx": {
+        "testo": "Aggressive acquisition campaign",
+        "effetti": {
+          "utenti": 12,
+          "cash": -40,
+          "kfactor": 0.1
+        }
+      },
+      "concept": "Viral growth competition",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-COMP-002",
+      "cat": "COMP",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The rival acquires a creator tool",
+      "scenario": "The competitor bought the second most used editing app on your platform. Response?",
+      "sx": {
+        "testo": "Build internally",
+        "effetti": {
+          "cash": -40,
+          "eco": 10,
+          "trust": 5,
+          "note": "4 turns of development."
+        }
+      },
+      "dx": {
+        "testo": "You also acquire",
+        "effetti": {
+          "cash": -120,
+          "eco": 6,
+          "valore": 20,
+          "note": "Risky integration."
+        }
+      },
+      "concept": "Vertical integration in platform competition",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-COMP-003",
+      "cat": "COMP",
+      "tag": "S",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "The rival enters your main market",
+      "scenario": "The competitor just launched exactly your product with 10× the resources. Are you still relevant?",
+      "sx": {
+        "testo": "Community differentiation",
+        "effetti": {
+          "eco": 6,
+          "trust": 8,
+          "utenti": 5,
+          "churn": 4
+        }
+      },
+      "dx": {
+        "testo": "Pivot towards a vertical niche",
+        "effetti": {
+          "cash": -30,
+          "churn": -5,
+          "utenti": -8,
+          "eco": 8
+        }
+      },
+      "concept": "Competitive response and niche strategy",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-CRISI-001",
+      "cat": "CRISI",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Disinformation campaign",
+      "scenario": "A coordinated campaign is using the platform to spread fake news three weeks before the elections.",
+      "sx": {
+        "testo": "Only the obvious cases",
+        "effetti": {
+          "trust": -10,
+          "utenti": 0,
+          "eco": -5,
+          "note": "Critical press. Regulatory pressure."
+        }
+      },
+      "dx": {
+        "testo": "Mass removal with a public policy",
+        "effetti": {
+          "trust": 14,
+          "utenti": -10,
+          "eco": -6
+        }
+      },
+      "flags_set": {
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "concept": "Content moderation and electoral integrity",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-CRISI-002",
+      "cat": "CRISI",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Content creator accused of harassment",
+      "scenario": "The creator with the most followers on your platform is accused of harassment by three users. Do you suspend them or wait for evidence?",
+      "sx": {
+        "testo": "Wait for evidence",
+        "effetti": {
+          "trust": -12,
+          "utenti": -5,
+          "note": "The female community abandons."
+        }
+      },
+      "dx": {
+        "testo": "Immediate suspension with communication",
+        "effetti": {
+          "trust": 10,
+          "utenti": -3,
+          "eco": -6,
+          "churn": 4
+        }
+      },
+      "concept": "Platform responsibility and community safety",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-CRISI-003",
+      "cat": "CRISI",
+      "tag": "S",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Advertiser boycott",
+      "scenario": "Twenty brands have suspended advertising on the platform due to the presence of toxic content near their ads.",
+      "sx": {
+        "testo": "Negotiate privately with each brand",
+        "effetti": {
+          "cash": -30,
+          "trust": -8,
+          "eco": -4
+        }
+      },
+      "dx": {
+        "testo": "Public brand safety framework",
+        "effetti": {
+          "cash": -15,
+          "trust": 12,
+          "eco": 6,
+          "valore": 10
+        }
+      },
+      "concept": "Advertiser relations and brand safety",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-OPP-001",
+      "cat": "OPP",
+      "tag": "S",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "A viral creator notices you",
+      "scenario": "A creator with 800K followers posts on your platform on a bet. You have 48 hours of extraordinary visibility.",
+      "sx": {
+        "testo": "Do nothing special",
+        "effetti": {
+          "utenti": 18,
+          "eco": 5,
+          "churn": 3
+        }
+      },
+      "dx": {
+        "testo": "Reach out and offer special terms",
+        "effetti": {
+          "utenti": 35,
+          "eco": 12,
+          "cash": -25,
+          "churn": 8
+        }
+      },
+      "concept": "Seeding and viral acquisition",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-OPP-002",
+      "cat": "OPP",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Monetization tool for creators",
+      "scenario": "You launch a tool that allows creators to monetize their content directly. It increases their attachment to the platform.",
+      "sx": {
+        "testo": "Free base feature",
+        "effetti": {
+          "eco": 10,
+          "churn": 6,
+          "utenti": 5,
+          "cash": -20
+        }
+      },
+      "dx": {
+        "testo": "Premium suite with a commission",
+        "effetti": {
+          "eco": 16,
+          "churn": 10,
+          "cash": 15,
+          "utenti": 8
+        }
+      },
+      "concept": "Creator economy and platform monetization",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-OPP-003",
+      "cat": "OPP",
+      "tag": "S",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Expansion into three EU markets",
+      "scenario": "A growth fund wants to co-finance expansion into Germany, France, and Poland. Localization is complex.",
+      "sx": {
+        "testo": "Stay focused — IPO first",
+        "effetti": {
+          "note": "Cleaner IPO. No distractions."
+        }
+      },
+      "dx": {
+        "testo": "Expansion — big markets",
+        "effetti": {
+          "cash": 500,
+          "utenti": 18,
+          "eco": 8,
+          "note": "Investor Patience -8."
+        }
+      },
+      "concept": "Geographic expansion timing",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-ETICO-001",
+      "cat": "ETICO",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The algorithm amplifies outrage",
+      "scenario": "Divisive content generates 3× the average engagement. Ad revenues grow, the community polarizes. You have the internal data.",
+      "sx": {
+        "testo": "Let it run",
+        "effetti": {
+          "cash": 8,
+          "trust": -14,
+          "utenti": 10,
+          "note": "Dangerous pattern if it repeats."
+        }
+      },
+      "dx": {
+        "testo": "Depower divisive content",
+        "effetti": {
+          "cash": -4,
+          "trust": 12,
+          "churn": 6,
+          "utenti": -7
+        }
+      },
+      "concept": "Algorithmic amplification and societal harm (Gawer, 2022)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "S-ETICO-002",
+      "cat": "ETICO",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Unverified minor users",
+      "scenario": "13% of users are under 13 years old. Verifying them means losing them. Turning a blind eye is a violation.",
+      "sx": {
+        "testo": "Turn a blind eye",
+        "effetti": {
+          "utenti": 0,
+          "trust": -16,
+          "note": "Flag violation of COPPA/GDPR for minors."
+        }
+      },
+      "dx": {
+        "testo": "Verify and remove",
+        "effetti": {
+          "utenti": -13,
+          "trust": 18,
+          "churn": 4
+        }
+      },
+      "flags_set": {
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "concept": "Child protection in digital platforms",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-TEAM-001",
+      "cat": "TEAM",
+      "tag": "B",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Customer Success or Product?",
+      "scenario": "With 3 enterprise clients, you need someone to keep them satisfied. But the product still has critical gaps.",
+      "sx": {
+        "testo": "Head of Product",
+        "effetti": {
+          "cash": -16,
+          "utenti": 5,
+          "churn": 4
+        }
+      },
+      "dx": {
+        "testo": "Head of Customer Success",
+        "effetti": {
+          "cash": -14,
+          "churn": 10,
+          "utenti": 3
+        }
+      },
+      "concept": "B2B customer retention vs product development",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-TEAM-002",
+      "cat": "TEAM",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Enterprise sales — structure",
+      "scenario": "The sales team has grown to 5 people but lacks structure. Do you introduce a formal CRM and pipeline review process?",
+      "sx": {
+        "testo": "Informal management — freedom to the sales team",
+        "effetti": {
+          "utenti": 5,
+          "churn": -3,
+          "note": "Risk of losing deals in the pipeline."
+        }
+      },
+      "dx": {
+        "testo": "CRM + formal process",
+        "effetti": {
+          "cash": -15,
+          "utenti": 10,
+          "churn": 8,
+          "valore": 12
+        }
+      },
+      "concept": "Sales operations and scaling",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-TEAM-003",
+      "cat": "TEAM",
+      "tag": "B",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Chief Revenue Officer pre-IPO",
+      "scenario": "The board wants a CRO with an enterprise track record before the IPO. It costs a lot but signals commercial maturity.",
+      "sx": {
+        "testo": "Don't hire — the CEO manages",
+        "effetti": {
+          "trust": -6,
+          "valore": -10
+        }
+      },
+      "dx": {
+        "testo": "Senior CRO from a competitor",
+        "effetti": {
+          "cash": -35,
+          "trust": 12,
+          "valore": 20,
+          "utenti": 8
+        }
+      },
+      "concept": "Executive talent and IPO readiness",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-ECO-001",
+      "cat": "ECO",
+      "tag": "B",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "System integrator as a partner",
+      "scenario": "The largest local system integrator wants to become a reseller. They ask for exclusivity for the SMB segment.",
+      "sx": {
+        "testo": "Non-exclusive",
+        "effetti": {
+          "eco": 8,
+          "cash": 0,
+          "note": "Slower channel but not tied down."
+        }
+      },
+      "dx": {
+        "testo": "18-month exclusivity",
+        "effetti": {
+          "eco": 16,
+          "cash": 25,
+          "churn": 8,
+          "note": "Dependence on a single channel."
+        }
+      },
+      "concept": "Channel partner strategy (Brandenburger & Nalebuff, 1996)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-ECO-002",
+      "cat": "ECO",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Open enterprise APIs",
+      "scenario": "Clients are asking for APIs to integrate your SaaS into their ERPs and workflows. Developing them will take 3 months.",
+      "sx": {
+        "testo": "Not now — too early",
+        "effetti": {
+          "eco": -8,
+          "churn": -5,
+          "note": "Frustrated clients. Churn risk."
+        }
+      },
+      "dx": {
+        "testo": "APIs with a free sandbox",
+        "effetti": {
+          "eco": 16,
+          "utenti": 5,
+          "cash": -30,
+          "trust": 6
+        }
+      },
+      "concept": "Platform openness in B2B contexts",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-ECO-003",
+      "cat": "ECO",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "System integrator asks for a volume discount",
+      "scenario": "The system integrator partner controls 35% of your clients. They want a 30% discount on new contracts.",
+      "sx": {
+        "testo": "Refuse — margins won't hold",
+        "effetti": {
+          "eco": -12,
+          "note": "Dissatisfied partner. Indirect churn."
+        }
+      },
+      "dx": {
+        "testo": "Discount with a volume cap",
+        "effetti": {
+          "eco": 8,
+          "cash": 25,
+          "churn": 5,
+          "note": "Reduced margins but an active channel."
+        }
+      },
+      "concept": "Channel conflict and partner power",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-ECO-004",
+      "cat": "ECO",
+      "tag": "B",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Big4 consulting partnership",
+      "scenario": "Deloitte wants to include your SaaS in their digital consulting stack. They are asking for a 2-year exclusivity.",
+      "sx": {
+        "testo": "Non-exclusive",
+        "effetti": {
+          "eco": 8,
+          "cash": 20,
+          "note": "Openness to other partners."
+        }
+      },
+      "dx": {
+        "testo": "2-year exclusivity",
+        "effetti": {
+          "eco": 20,
+          "cash": 60,
+          "churn": 10,
+          "note": "Strong dependence on Deloitte."
+        }
+      },
+      "concept": "Strategic partnership and exclusivity",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-COMP-001",
+      "cat": "COMP",
+      "tag": "B",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Competitor Alert — the incumbent wakes up",
+      "scenario": "Salesforce has launched a feature that covers 60% of your main use case.",
+      "sx": {
+        "testo": "Vertical niche — deep differentiation",
+        "effetti": {
+          "eco": 6,
+          "trust": 5,
+          "utenti": -4
+        }
+      },
+      "dx": {
+        "testo": "Accelerate the roadmap",
+        "effetti": {
+          "cash": -40,
+          "utenti": 4,
+          "churn": -5
+        }
+      },
+      "concept": "Incumbent response and niche positioning",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-COMP-002",
+      "cat": "COMP",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The competitor lowers prices by 30%",
+      "scenario": "The rival startup cut prices to gain market share. Two of your clients demand parity.",
+      "sx": {
+        "testo": "Don't go down — defend your margins",
+        "effetti": {
+          "utenti": -8,
+          "churn": 6,
+          "cash": 0
+        }
+      },
+      "dx": {
+        "testo": "Go down for existing clients",
+        "effetti": {
+          "utenti": 0,
+          "cash": -20,
+          "churn": 4
+        }
+      },
+      "concept": "Price competition and margin defense",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-COMP-003",
+      "cat": "COMP",
+      "tag": "B",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Acquisition by a big player",
+      "scenario": "Salesforce offers €280M. It's above the estimated IPO value. A luxury Strategic Exit.",
+      "sx": {
+        "testo": "Refuse — you want the IPO",
+        "effetti": {
+          "valore": 25,
+          "note": "Investor Patience -15. The market reads strength."
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "note": "Ending: Strategic Exit — Big Tech."
+        }
+      },
+      "concept": "Exit strategy and strategic acquirers",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-CRISI-001",
+      "cat": "CRISI",
+      "tag": "B",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Security audit from the first client",
+      "scenario": "Your first enterprise client asks for a penetration test before signing. You have never done a formal security audit.",
+      "sx": {
+        "testo": "Postpone — you aren't ready",
+        "effetti": {
+          "trust": -5,
+          "note": "You lose the client."
+        }
+      },
+      "dx": {
+        "testo": "External security consultant",
+        "effetti": {
+          "cash": -35,
+          "trust": 14,
+          "churn": 8,
+          "note": "The client signs."
+        }
+      },
+      "concept": "Enterprise security requirements",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-CRISI-002",
+      "cat": "CRISI",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Data breach — enterprise clients",
+      "scenario": "A breach exposes data of three enterprise clients. Mandatory GDPR notification within 72 hours.",
+      "sx": {
+        "testo": "Minimal notification",
+        "effetti": {
+          "trust": -18,
+          "cash": -20,
+          "churn": -8
+        }
+      },
+      "dx": {
+        "testo": "Full notification + task force",
+        "effetti": {
+          "trust": 8,
+          "cash": -50,
+          "churn": 6
+        }
+      },
+      "concept": "GDPR breach notification (Art. 33)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-CRISI-003",
+      "cat": "CRISI",
+      "tag": "B",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Churn of the largest client",
+      "scenario": "The client that accounts for 40% of your MRR does not renew. Reason: UI is too complex for their team.",
+      "sx": {
+        "testo": "Accept the churn and pivot",
+        "effetti": {
+          "cash": -40,
+          "churn": -5,
+          "note": "Survival at risk."
+        }
+      },
+      "dx": {
+        "testo": "Win-back: dedicated UI redesign",
+        "effetti": {
+          "cash": -25,
+          "churn": 6,
+          "utenti": 4,
+          "note": "3 turns of work."
+        }
+      },
+      "concept": "Enterprise churn and win-back strategy",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-OPP-001",
+      "cat": "OPP",
+      "tag": "B",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Fortune 500 as your first client",
+      "scenario": "A former contact offers you to be your first Fortune 500 client. 40% discount and significant customizations.",
+      "sx": {
+        "testo": "Refuse the customizations",
+        "effetti": {
+          "churn": 4,
+          "cash": 20,
+          "note": "Scalable product but a smaller client."
+        }
+      },
+      "dx": {
+        "testo": "Accept everything",
+        "effetti": {
+          "cash": 45,
+          "churn": -6,
+          "valore": 30,
+          "note": "Trophy client but high technical debt."
+        }
+      },
+      "concept": "Anchor client strategy and product focus",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-OPP-002",
+      "cat": "OPP",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Microsoft Azure Marketplace",
+      "scenario": "Azure Marketplace offers you distribution to 50,000 potential clients. 20% revenue share.",
+      "sx": {
+        "testo": "Refuse — margins are too low",
+        "effetti": {
+          "eco": 2
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "eco": 18,
+          "utenti": 15,
+          "cash": 35,
+          "valore": 25
+        }
+      },
+      "concept": "Distribution through platform marketplaces",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-OPP-003",
+      "cat": "OPP",
+      "tag": "B",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "DACH expansion with a local partner",
+      "scenario": "A German reseller asks for exclusivity in Germany, Austria, and Switzerland for 3 years.",
+      "sx": {
+        "testo": "Non-exclusive",
+        "effetti": {
+          "cash": 20,
+          "eco": 5,
+          "note": "Future flexibility."
+        }
+      },
+      "dx": {
+        "testo": "3-year DACH exclusivity",
+        "effetti": {
+          "cash": 55,
+          "eco": 12,
+          "churn": 8,
+          "valore": 30
+        }
+      },
+      "concept": "International channel strategy",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-ETICO-001",
+      "cat": "ETICO",
+      "tag": "B",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Monitoring the client's employees",
+      "scenario": "A client wants to use your SaaS to monitor their employees' productivity without their knowledge. It's in the contract.",
+      "sx": {
+        "testo": "Allow it — it's contractually lawful",
+        "effetti": {
+          "cash": 30,
+          "trust": -16,
+          "note": "Ethical and GDPR flag."
+        }
+      },
+      "dx": {
+        "testo": "Mandatory transparency clause",
+        "effetti": {
+          "cash": 18,
+          "trust": 10,
+          "churn": 6
+        }
+      },
+      "concept": "Workplace surveillance ethics",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "B-ETICO-002",
+      "cat": "ETICO",
+      "tag": "B",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Aggregated client data for benchmarks",
+      "scenario": "You could sell industry benchmarks using aggregated client data. The contracts don't explicitly forbid it.",
+      "sx": {
+        "testo": "Launch the benchmark product",
+        "effetti": {
+          "cash": 40,
+          "trust": -20,
+          "note": "If clients find out, massive churn."
+        }
+      },
+      "dx": {
+        "testo": "Ask for explicit consent first",
+        "effetti": {
+          "trust": 12,
+          "churn": 8,
+          "cash": 20,
+          "note": "Only 60% accept but trust grows."
+        }
+      },
+      "concept": "B2B data ethics and secondary use",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-TEAM-001",
+      "cat": "TEAM",
+      "tag": "F",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "CTO or compliance officer — first hire",
+      "scenario": "In Fintech, compliance is not optional. But without a solid CTO, the product won't scale. Pick just one priority.",
+      "sx": {
+        "testo": "CTO first",
+        "effetti": {
+          "cash": -16,
+          "churn": 10,
+          "utenti": 4,
+          "trust": -6
+        }
+      },
+      "dx": {
+        "testo": "Compliance Officer first",
+        "effetti": {
+          "cash": -14,
+          "trust": 12,
+          "churn": 6,
+          "utenti": 2
+        }
+      },
+      "concept": "Regulatory compliance vs product velocity in Fintech",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-TEAM-002",
+      "cat": "TEAM",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Head of Risk — necessary?",
+      "scenario": "The regulator is looking more closely. A dedicated Head of Risk is expensive but signals institutional maturity.",
+      "sx": {
+        "testo": "Not now — you manage the risk",
+        "effetti": {
+          "trust": -8,
+          "cash": 0,
+          "note": "Regulatory vulnerability."
+        }
+      },
+      "dx": {
+        "testo": "Senior Head of Risk",
+        "effetti": {
+          "cash": -22,
+          "trust": 14,
+          "churn": 6,
+          "valore": 10
+        }
+      },
+      "concept": "Risk management in regulated industries",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-TEAM-003",
+      "cat": "TEAM",
+      "tag": "F",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "DPO and CISO pre-IPO",
+      "scenario": "The IPO requires a formal Data Protection Officer and a Chief Information Security Officer. Two expensive but mandatory hires.",
+      "sx": {
+        "testo": "External consultants — cheaper",
+        "effetti": {
+          "cash": -20,
+          "trust": 8,
+          "valore": -5
+        }
+      },
+      "dx": {
+        "testo": "Internal hires",
+        "effetti": {
+          "cash": -45,
+          "trust": 16,
+          "churn": 6,
+          "valore": 15
+        }
+      },
+      "concept": "Fintech regulatory compliance and IPO",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-ECO-001",
+      "cat": "ECO",
+      "tag": "F",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Bank as a complementor",
+      "scenario": "A regional bank wants to distribute your services to its customer base. They ask for access to user data as a condition.",
+      "sx": {
+        "testo": "Refuse the data condition",
+        "effetti": {
+          "eco": 4,
+          "trust": 10,
+          "cash": 8
+        }
+      },
+      "dx": {
+        "testo": "Accept the data condition",
+        "effetti": {
+          "eco": 18,
+          "cash": 35,
+          "trust": -16,
+          "note": "Regulatory flag."
+        }
+      },
+      "concept": "Banking partnership and data sharing",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-ECO-002",
+      "cat": "ECO",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Fintech partners as complementors",
+      "scenario": "Three complementary fintechs (insurance, investments, pensions) want to integrate into your platform.",
+      "sx": {
+        "testo": "Only one — quality control",
+        "effetti": {
+          "eco": 10,
+          "trust": 8,
+          "cash": 15
+        }
+      },
+      "dx": {
+        "testo": "All three — rich ecosystem",
+        "effetti": {
+          "eco": 22,
+          "utenti": 10,
+          "cash": 30,
+          "trust": -5,
+          "note": "High governance complexity."
+        }
+      },
+      "concept": "Ecosystem composition and governance",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-ECO-003",
+      "cat": "ECO",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "PSD2 Window — open banking",
+      "scenario": "Trust ≥ 55. The PSD2 window opens: you can access account data of any EU bank with user consent.",
+      "sx": {
+        "testo": "Don't implement — too complex",
+        "effetti": {
+          "eco": -8,
+          "utenti": -4
+        }
+      },
+      "dx": {
+        "testo": "Implement immediately",
+        "effetti": {
+          "eco": 16,
+          "utenti": 14,
+          "cash": 25,
+          "trust": 6,
+          "note": "Window: 5 turns."
+        }
+      },
+      "trigger": "trust >= 55 AND fase >= 2",
+      "concept": "Open Banking and PSD2 (EU Directive 2015/2366)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-ECO-004",
+      "cat": "ECO",
+      "tag": "F",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Traditional bank as a competitor-complementor",
+      "scenario": "A traditional bank wants to both distribute your services and internally develop the same feature.",
+      "sx": {
+        "testo": "Refuse — too ambiguous",
+        "effetti": {
+          "eco": 2,
+          "note": "No relationship."
+        }
+      },
+      "dx": {
+        "testo": "Accept with a non-compete clause",
+        "effetti": {
+          "eco": 12,
+          "cash": 28,
+          "trust": 6,
+          "churn": 8
+        }
+      },
+      "concept": "Coopetition in financial services (Brandenburger & Nalebuff, 1996)",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-COMP-001",
+      "cat": "COMP",
+      "tag": "F",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Competitor Alert — neobank enters your segment",
+      "scenario": "A neobank with 8M users just launched an identical product to yours for the youth segment.",
+      "sx": {
+        "testo": "Ultra-niche — different target",
+        "effetti": {
+          "eco": 8,
+          "trust": 6,
+          "utenti": -5,
+          "note": "Less contested segment."
+        }
+      },
+      "dx": {
+        "testo": "Head-on battle — UX differentiation",
+        "effetti": {
+          "cash": -30,
+          "utenti": 6,
+          "churn": -4
+        }
+      },
+      "concept": "Neobank competition and niche strategy",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-COMP-002",
+      "cat": "COMP",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Multi-homing — mandatory PSD2 portability",
+      "scenario": "PSD2 mandates data portability. You cannot legally lock in. How do you build a competitive advantage?",
+      "sx": {
+        "testo": "Experiential switching costs",
+        "effetti": {
+          "churn": 10,
+          "trust": 4,
+          "utenti": 3,
+          "cash": -15
+        }
+      },
+      "dx": {
+        "testo": "Total Open Banking — win on service",
+        "effetti": {
+          "trust": 12,
+          "utenti": 6,
+          "churn": -4,
+          "eco": 8
+        }
+      },
+      "concept": "Regulatory-forced multi-homing",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-COMP-003",
+      "cat": "COMP",
+      "tag": "F",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "The competitor obtains a banking license",
+      "scenario": "The competitor neobank obtained a full banking license. They can offer products that you can't yet.",
+      "sx": {
+        "testo": "Accelerate your license application",
+        "effetti": {
+          "cash": -40,
+          "trust": 8,
+          "note": "18 months of waiting."
+        }
+      },
+      "dx": {
+        "testo": "Partnership with a licensed bank",
+        "effetti": {
+          "eco": 10,
+          "cash": 20,
+          "churn": 6,
+          "trust": 5
+        }
+      },
+      "concept": "Regulatory arbitrage and licensing strategy",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-CRISI-001",
+      "cat": "CRISI",
+      "tag": "F",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Bank of Italy inspection",
+      "scenario": "The Bank of Italy announces a routine inspection. You have 2 weeks to prepare the documentation.",
+      "sx": {
+        "testo": "Minimal documentation",
+        "effetti": {
+          "trust": -14,
+          "cash": -10,
+          "note": "Inspection with an uncertain outcome."
+        }
+      },
+      "dx": {
+        "testo": "Task force + regulatory consultant",
+        "effetti": {
+          "trust": 10,
+          "cash": -40,
+          "churn": 8
+        }
+      },
+      "concept": "Financial regulatory inspection",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-CRISI-002",
+      "cat": "CRISI",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Systemic user fraud",
+      "scenario": "A coordinated fraud pattern is using the platform for micro-laundering. The regulator noticed anomalous patterns.",
+      "sx": {
+        "testo": "Block suspicious accounts without notification",
+        "effetti": {
+          "trust": -8,
+          "churn": -5,
+          "note": "Legitimate users blocked erroneously."
+        }
+      },
+      "dx": {
+        "testo": "Notify authorities + selective blocking",
+        "effetti": {
+          "trust": 14,
+          "utenti": -8,
+          "cash": -20,
+          "churn": 8
+        }
+      },
+      "concept": "AML compliance and fraud prevention",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-CRISI-003",
+      "cat": "CRISI",
+      "tag": "F",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "CONSOB investigation into investment products",
+      "scenario": "CONSOB has opened an inquiry into your asset management products. You have 45 days to respond.",
+      "sx": {
+        "testo": "Defensive legal response",
+        "effetti": {
+          "trust": -16,
+          "cash": -50,
+          "eco": -5
+        }
+      },
+      "dx": {
+        "testo": "Collaborate + suspend temporarily",
+        "effetti": {
+          "trust": 10,
+          "cash": -30,
+          "churn": 8,
+          "eco": 4
+        }
+      },
+      "flags_set": {
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "concept": "Securities regulation compliance",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-OPP-001",
+      "cat": "OPP",
+      "tag": "F",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "PSD2 License — access level",
+      "scenario": "You obtain the PSD2 license. You can choose the level of access to users' banking data.",
+      "sx": {
+        "testo": "Minimum license — safe",
+        "effetti": {
+          "trust": 10,
+          "cash": -20,
+          "eco": 6
+        }
+      },
+      "dx": {
+        "testo": "Full license — more data",
+        "effetti": {
+          "trust": 8,
+          "cash": -50,
+          "eco": 14,
+          "utenti": 8
+        }
+      },
+      "concept": "PSD2 licensing and data access",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-OPP-002",
+      "cat": "OPP",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Micro-lending product",
+      "scenario": "You launch a micro-credit product for your users. High revenue potential, high regulatory risk.",
+      "sx": {
+        "testo": "Not now — wait for Phase 3",
+        "effetti": {
+          "note": "Opportunity postponed. No immediate effect."
+        }
+      },
+      "dx": {
+        "testo": "Launch immediately with conservative criteria",
+        "effetti": {
+          "cash": 25,
+          "trust": 6,
+          "utenti": 8,
+          "eco": 5,
+          "note": "Default rate needs monitoring."
+        }
+      },
+      "concept": "Fintech credit products and regulation",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-OPP-003",
+      "cat": "OPP",
+      "tag": "F",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Acquisition by a European banking institution",
+      "scenario": "A European bank offers double the estimated IPO value. Independence vs immediate liquidity.",
+      "sx": {
+        "testo": "Refuse — independent IPO",
+        "effetti": {
+          "valore": 40,
+          "note": "Investor Patience -12. The market respects this."
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "note": "Ending: Strategic Exit — European Bank."
+        }
+      },
+      "concept": "Fintech M&A and strategic exit",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-ETICO-001",
+      "cat": "ETICO",
+      "tag": "F",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Credit scoring with discriminatory proxies",
+      "scenario": "Your scoring model uses proxy variables that correlate with ethnicity and geographic area. It performs better but discriminates systematically.",
+      "sx": {
+        "testo": "Keep the model",
+        "effetti": {
+          "cash": 12,
+          "trust": -18,
+          "note": "Potential Equal Credit Opportunity violation."
+        }
+      },
+      "dx": {
+        "testo": "Remove the proxies — accept lower performance",
+        "effetti": {
+          "cash": 6,
+          "trust": 16,
+          "churn": 8
+        }
+      },
+      "concept": "Algorithmic discrimination in credit scoring",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "F-ETICO-002",
+      "cat": "ETICO",
+      "tag": "F",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Predatory lending on vulnerable users",
+      "scenario": "Your micro-credit algorithm identifies people with short insolvency histories as the best clients. You are lending to those who cannot afford it.",
+      "sx": {
+        "testo": "Optimize for profit",
+        "effetti": {
+          "cash": 35,
+          "trust": -22,
+          "note": "Consumer Credit Directive violation."
+        }
+      },
+      "dx": {
+        "testo": "Income-based cap on lending",
+        "effetti": {
+          "cash": 15,
+          "trust": 18,
+          "churn": 10,
+          "eco": 6
+        }
+      },
+      "concept": "Responsible lending and consumer protection",
+      "difficulty": [
+        "NORMAL",
+        "EASY"
+      ]
+    },
+    {
+      "id": "H-CRISI-GEN-001",
+      "cat": "CRISI",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "The runway ends earlier than expected",
+      "scenario": "An accounting error overestimated the available cash. You have 6 weeks, not 4 months. The team finds out before you do.",
+      "sx": {
+        "testo": "Communicate to the team immediately",
+        "effetti": {
+          "cash": -5,
+          "churn": -8,
+          "trust": 6,
+          "note": "The team is shaken but trusts you. Some leave."
+        }
+      },
+      "dx": {
+        "testo": "Manage quietly and look for funding",
+        "effetti": {
+          "cash": -10,
+          "trust": -12,
+          "note": "If the team finds out on their own, trust collapses completely."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Normal the runway is manageable. In Hard 6 weeks is almost an immediate game over.",
+      "concept": "Crisis management and founder transparency",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-CRISI-GEN-002",
+      "cat": "CRISI",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The competitor copies you and does it better",
+      "scenario": "The rival launched a version of your product with superior UX and lower pricing. Your growth has stopped dead.",
+      "sx": {
+        "testo": "Lower prices to keep up",
+        "effetti": {
+          "cash": -25,
+          "utenti": 4,
+          "churn": -8,
+          "note": "Margins at minimum. Runway shortens drastically."
+        }
+      },
+      "dx": {
+        "testo": "Pivot to a feature they don't have",
+        "effetti": {
+          "cash": -30,
+          "utenti": -6,
+          "eco": 8,
+          "note": "3 turns of development. Risky, but genuine differentiation."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Normal you can wait. In Hard you have neither the money nor the time.",
+      "concept": "Competitive response under resource constraints",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-CRISI-GEN-003",
+      "cat": "CRISI",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Key employee arrested",
+      "scenario": "Your CTO was arrested for a personal matter unrelated to the company. The press has linked it to you.",
+      "sx": {
+        "testo": "Distance yourself publicly",
+        "effetti": {
+          "trust": 6,
+          "churn": -10,
+          "note": "The team sees you as cold. Resignation risk."
+        }
+      },
+      "dx": {
+        "testo": "Defend the person and wait for the facts",
+        "effetti": {
+          "trust": -14,
+          "utenti": -5,
+          "note": "If they are found guilty the reputational damage is double."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "A crisis without a right answer. In Hard you have no reputational buffer to absorb the impact.",
+      "concept": "Reputational risk and leadership under uncertainty",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-CRISI-GEN-004",
+      "cat": "CRISI",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "The lead investor wants out right now",
+      "scenario": "The angel who funded you needs urgent personal liquidity. They want to sell their stake now, to anyone.",
+      "sx": {
+        "testo": "Find a secondary buyer",
+        "effetti": {
+          "cash": -20,
+          "trust": -8,
+          "note": "The new investor is a stranger. Could be a competitor."
+        }
+      },
+      "dx": {
+        "testo": "You buy back the stake yourself",
+        "effetti": {
+          "cash": -40,
+          "churn": 5,
+          "trust": 8,
+          "note": "Runway drops drastically. But you keep control."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Normal you have reserves to handle it. In Hard buying back the stake can be the final blow to the runway.",
+      "concept": "Secondary market transactions and founder control",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-CRISI-S-001",
+      "cat": "CRISI",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Viral harmful content — rapid contagion",
+      "scenario": "Content glorifying self-harm reached 2 million views in 4 hours. You are trending for the wrong reasons.",
+      "sx": {
+        "testo": "Immediate removal with no communication",
+        "effetti": {
+          "trust": -10,
+          "utenti": -8,
+          "note": "The communication void amplifies speculations."
+        }
+      },
+      "dx": {
+        "testo": "Removal + public communication + task force",
+        "effetti": {
+          "trust": 8,
+          "cash": -25,
+          "eco": -5,
+          "utenti": -5,
+          "note": "Expensive but builds a virtuous precedent."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard you don't have a Trust and Safety team ready. The response is slow and damage accumulates.",
+      "concept": "Platform responsibility and harmful content (EU Digital Services Act)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-CRISI-S-002",
+      "cat": "CRISI",
+      "tag": "S",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Internal leak before the IPO roadshow",
+      "scenario": "An employee sold confidential internal metrics to a hedge fund before your IPO roadshow. The SEC is investigating.",
+      "sx": {
+        "testo": "Cooperate with authorities immediately",
+        "effetti": {
+          "trust": 10,
+          "cash": -40,
+          "valore": -20,
+          "note": "IPO delayed by 3 turns but a clean path."
+        }
+      },
+      "dx": {
+        "testo": "Manage internally and minimize exposure",
+        "effetti": {
+          "trust": -18,
+          "valore": -35,
+          "note": "If it comes out the damage is irreparable. IPO blocked."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "Legal crisis with direct impact on the IPO window — in Hard that window is already tight.",
+      "concept": "Insider trading, securities law, corporate governance",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-CRISI-B-001",
+      "cat": "CRISI",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Zero-day published — unpatched vulnerability",
+      "scenario": "A security researcher publishes a critical vulnerability in your product, known internally but not patched due to development priorities.",
+      "sx": {
+        "testo": "Emergency patch + responsible disclosure",
+        "effetti": {
+          "trust": 6,
+          "cash": -35,
+          "churn": -5,
+          "note": "Expensive. The market appreciates the transparency."
+        }
+      },
+      "dx": {
+        "testo": "Contest the severity of the vulnerability",
+        "effetti": {
+          "trust": -20,
+          "churn": -12,
+          "note": "The security community does not forget. Long-term compromised reputation."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard you do not have a dedicated security team. The patch requires resources you likely don't have.",
+      "concept": "Responsible disclosure and security debt",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-CRISI-F-001",
+      "cat": "CRISI",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Surprise EMI license suspension",
+      "scenario": "The Bank of Italy preventively suspended your EMI license for 30 days during a surprise inspection. You cannot process payments.",
+      "sx": {
+        "testo": "Suspend the service and inform users",
+        "effetti": {
+          "trust": 4,
+          "utenti": -15,
+          "cash": -30,
+          "note": "You lose users but maintain regulatory credibility."
+        }
+      },
+      "dx": {
+        "testo": "Look for a technical workaround to continue",
+        "effetti": {
+          "trust": -22,
+          "note": "Direct violation of the suspension. Risk of permanent license revocation."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard 30 days of operational stop can wipe out the runway. There's no painless choice.",
+      "concept": "Payment services regulation and operational resilience",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ETICO-GEN-001",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Salary cut without communication",
+      "scenario": "To extend the runway by 3 months, the co-founder proposes cutting salaries by 20% without formally communicating it — framing it just as a temporary payment delay.",
+      "sx": {
+        "testo": "Accept the plan — it's only temporary",
+        "effetti": {
+          "cash": 15,
+          "churn": -14,
+          "trust": -10,
+          "note": "If the team discovers the lie, resignations are immediate."
+        }
+      },
+      "dx": {
+        "testo": "Transparent communication and explicit consent",
+        "effetti": {
+          "cash": 8,
+          "churn": -5,
+          "trust": 8,
+          "note": "Some leave, but those who stay are aligned."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the temptation to lie to survive is real and mechanically advantageous in the short term.",
+      "concept": "Founder ethics under survival pressure",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ETICO-GEN-002",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Inflated metrics for the VC pitch",
+      "scenario": "To close the round that saves you, your advisor suggests presenting data with a more generous methodology for calculating active users — technically legal but misleading.",
+      "sx": {
+        "testo": "Use the generous methodology",
+        "effetti": {
+          "cash": 300,
+          "trust": -15,
+          "note": "If the VC does deep due diligence, the deal falls through and your reputation is compromised."
+        }
+      },
+      "dx": {
+        "testo": "Present the real data with context",
+        "effetti": {
+          "cash": 150,
+          "trust": 10,
+          "note": "The round is smaller but the VC trusts you. A healthy foundation for the future relationship."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the difference between 150K and 300K can be the difference between survival and game over.",
+      "concept": "Startup metrics integrity and investor relations",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ETICO-GEN-003",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Unattributed open source code plagiarism",
+      "scenario": "Your team has extensively used open-source code under the GPL license without respecting attribution terms. An external developer found out and is about to publish it.",
+      "sx": {
+        "testo": "Contact the developer and negotiate silence",
+        "effetti": {
+          "trust": -14,
+          "cash": -20,
+          "note": "The developer might not accept. The attempt itself is ethically worse than the original mistake."
+        }
+      },
+      "dx": {
+        "testo": "Proactive disclosure and immediate fix",
+        "effetti": {
+          "trust": 8,
+          "cash": -15,
+          "eco": 5,
+          "note": "The open-source community appreciates the fairness."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the cost of the fix is proportionally much higher on the runway.",
+      "concept": "Open source licensing ethics (GPL compliance)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ETICO-GEN-004",
+      "cat": "ETICO",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Buyer with controversial practices — only offer",
+      "scenario": "The only serious acquisition offer comes from a conglomerate with a documented track record of post-acquisition mass layoffs. It's your way out.",
+      "sx": {
+        "testo": "Accept — it's a dignified exit for you",
+        "effetti": {
+          "note": "Game over. Ending: Strategic Exit — Controversial Buyer. The team is fired within 6 months."
+        }
+      },
+      "dx": {
+        "testo": "Refuse — look for alternatives",
+        "effetti": {
+          "cash": -15,
+          "note": "Investor Patience -20. Time is running out. Another offer might not come."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard this might be the only offer. The dilemma is real and without a right answer.",
+      "concept": "M&A ethics and stakeholder responsibility",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ETICO-S-001",
+      "cat": "ETICO",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Screen addiction in teens — internal data confirms it",
+      "scenario": "Your internal research shows that 23% of under-16 users use the platform for more than 6 hours a day. The data is unequivocal. Do you publish it?",
+      "sx": {
+        "testo": "Don't publish — it's confidential internal data",
+        "effetti": {
+          "cash": 10,
+          "trust": -18,
+          "note": "If it comes out the damage is double: the data and the choice to hide it."
+        }
+      },
+      "dx": {
+        "testo": "Publish with a mitigation plan",
+        "effetti": {
+          "trust": 14,
+          "utenti": -10,
+          "cash": -15,
+          "eco": 6
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard losing 10% of users can be devastating. The dilemma is economically real.",
+      "concept": "Platform responsibility and youth mental health (Online Safety Act)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ETICO-S-002",
+      "cat": "ETICO",
+      "tag": "S",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Political bias in the algorithm — external analysis",
+      "scenario": "An external analysis demonstrates that your algorithm systematically favors the content of one political side. It wasn't programmed that way — it's an emergent bias.",
+      "sx": {
+        "testo": "Contest the analysis — it's methodologically questionable",
+        "effetti": {
+          "trust": -16,
+          "eco": -8,
+          "note": "Contesting without a fix is read as bad faith."
+        }
+      },
+      "dx": {
+        "testo": "Acknowledge the bias and start a public audit",
+        "effetti": {
+          "trust": 10,
+          "cash": -30,
+          "utenti": -6,
+          "eco": 5
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the cost of the audit is disproportionate compared to available resources.",
+      "concept": "Algorithmic bias and political neutrality (EU AI Act)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ETICO-B-001",
+      "cat": "ETICO",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The client uses the SaaS for automated firings",
+      "scenario": "Your largest enterprise client is using your HR analytics module to automatically generate layoff lists. It's legal. It's in the contract. But you know about it.",
+      "sx": {
+        "testo": "It's none of your business — it's their company",
+        "effetti": {
+          "cash": 40,
+          "trust": -14,
+          "eco": -6,
+          "note": "Other clients might find out and demand guarantees."
+        }
+      },
+      "dx": {
+        "testo": "Add a mandatory ethical use clause",
+        "effetti": {
+          "cash": 20,
+          "trust": 12,
+          "churn": 6,
+          "note": "The client might not renew."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard losing the largest client can be fatal. The dilemma is economically devastating.",
+      "concept": "Algorithmic management and labor ethics",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ETICO-B-002",
+      "cat": "ETICO",
+      "tag": "B",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "IPO due diligence reveals borderline accounting",
+      "scenario": "Your IPO advisor found that some revenue recognition practices from the last 2 years are borderline according to IFRS standards. Fixing it means lowering reported revenues by 18%.",
+      "sx": {
+        "testo": "Don't fix it — they are legitimate interpretations",
+        "effetti": {
+          "trust": -16,
+          "valore": -10,
+          "note": "If CONSOB finds it post-IPO the damage is criminal."
+        }
+      },
+      "dx": {
+        "testo": "Fix and restate",
+        "effetti": {
+          "trust": 12,
+          "valore": -20,
+          "cash": -25,
+          "note": "Lower IPO but clean."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard lowering revenues by 18% can bring the valuation below the IPO threshold.",
+      "concept": "Revenue recognition standards (IFRS 15) and IPO integrity",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ETICO-F-001",
+      "cat": "ETICO",
+      "tag": "F",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Usurious loans disguised as fees",
+      "scenario": "Your micro-credit model has an effective APR of 340% when all fees are considered. It is structured to be legally opaque. Nobody has noticed yet.",
+      "sx": {
+        "testo": "Keep the structure — it is legally defensible",
+        "effetti": {
+          "cash": 30,
+          "trust": -20,
+          "note": "When it emerges — and it always emerges — it's game over with regulators."
+        }
+      },
+      "dx": {
+        "testo": "Restructure the product with total transparency on APR",
+        "effetti": {
+          "cash": 10,
+          "trust": 16,
+          "eco": 8,
+          "churn": 6
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the temptation to maximize revenues with opaque structures is mechanically convenient in the short term.",
+      "concept": "Consumer credit transparency (Consumer Credit Directive)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ETICO-F-002",
+      "cat": "ETICO",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Geolocation data sold to insurance companies",
+      "scenario": "An insurance company offers a highly profitable contract to access the aggregated movement patterns of your users. The terms of service technically allow it in a clause at paragraph 47.",
+      "sx": {
+        "testo": "Sign the contract",
+        "effetti": {
+          "cash": 50,
+          "trust": -18,
+          "eco": -5,
+          "note": "If the users find out — and they will — it's an immediate crisis."
+        }
+      },
+      "dx": {
+        "testo": "Refuse and update the terms with clear language",
+        "effetti": {
+          "trust": 14,
+          "churn": 8,
+          "eco": 6,
+          "cash": -5
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "trigger": null,
+      "difficulty_note": "50K in Hard can be worth months of runway. The dilemma is economically very real.",
+      "concept": "Data privacy, GDPR consent requirements (Art. 7)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-COMP-GEN-001",
+      "cat": "COMP",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "The competitor copies you before you launch",
+      "scenario": "You pitched the product to an accelerator. Two weeks later a competitor launches something identical. Someone talked.",
+      "sx": {
+        "testo": "Launch anyway as soon as possible",
+        "effetti": {
+          "cash": -20,
+          "utenti": 8,
+          "note": "Unfinished product. First mover but with technical debt."
+        }
+      },
+      "dx": {
+        "testo": "Delay and differentiate deeply",
+        "effetti": {
+          "cash": -15,
+          "utenti": -4,
+          "eco": 8,
+          "note": "You lose the timing but arrive with something truly different."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard launching an unfinished product with 100K can burn the runway without generating sufficient traction.",
+      "concept": "First-mover disadvantage and product readiness",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-COMP-GEN-002",
+      "cat": "COMP",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The competitor hires your entire sales team",
+      "scenario": "Your entire sales team — 3 people — has received simultaneous offers from the competitor with a 60% salary increase. If they accept you lose 40% of the pipeline.",
+      "sx": {
+        "testo": "You can't compete financially — let them go",
+        "effetti": {
+          "churn": -14,
+          "utenti": -8,
+          "note": "Pipeline at risk. Recovery requires 4 turns."
+        }
+      },
+      "dx": {
+        "testo": "Accelerated equity and retention bonus",
+        "effetti": {
+          "churn": 8,
+          "cash": -20,
+          "note": "Runway shortens but the team stays. For now."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard you don't have the liquidity to do economic retention without compromising the runway.",
+      "concept": "Talent poaching and competitive dynamics",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-COMP-GEN-003",
+      "cat": "COMP",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "The competitor files a patent on your core feature",
+      "scenario": "The rival filed a patent of dubious validity on a central mechanic of your product. They sent you a cease and desist.",
+      "sx": {
+        "testo": "Legal challenge — invalidate the patent",
+        "effetti": {
+          "cash": -50,
+          "trust": 4,
+          "note": "12-18 months of legal process. IPO likely blocked in the meantime."
+        }
+      },
+      "dx": {
+        "testo": "License agreement — you pay the competitor",
+        "effetti": {
+          "cash": -15,
+          "valore": -12,
+          "note": "Expensive but fast. The competitor earns from you forever."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard 50K in legal fees can be the entire runway.",
+      "concept": "Patent litigation and startup survival",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-COMP-S-001",
+      "cat": "COMP",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The competitor pays your top creators to migrate",
+      "scenario": "The rival is offering guaranteed contracts of 50K/year to your 10 most followed creators. Three have already publicly accepted.",
+      "sx": {
+        "testo": "You can't match the offers",
+        "effetti": {
+          "eco": -16,
+          "utenti": -12,
+          "note": "The effect is viral — other creators consider leaving."
+        }
+      },
+      "dx": {
+        "testo": "Launch a Creator Fund with platform equity",
+        "effetti": {
+          "eco": 10,
+          "cash": -35,
+          "churn": 6,
+          "note": "Powerful message but expensive. You align long-term interests."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the Creator Fund might be economically impossible. Losing the creators can be irreversible.",
+      "concept": "Creator economy competition and platform switching",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-COMP-B-001",
+      "cat": "COMP",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Microsoft launches your feature for free",
+      "scenario": "Microsoft announced that they will integrate a functionality identical to your main value proposition for free into Teams. Available in 90 days.",
+      "sx": {
+        "testo": "Vertical pivot — deep specialization",
+        "effetti": {
+          "cash": -25,
+          "utenti": -6,
+          "eco": 8,
+          "trust": 6,
+          "note": "3 turns for the pivot. Then you are in a market where Microsoft won't reach."
+        }
+      },
+      "dx": {
+        "testo": "Accelerate sales before the Microsoft announcement",
+        "effetti": {
+          "cash": -15,
+          "utenti": 10,
+          "note": "90-day window. Then the market freezes."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "The incumbent threat is existential in Hard — you don't have the resources to compete head-on.",
+      "concept": "Incumbent platform envelopment strategy (Eisenmann, 2011)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-COMP-F-001",
+      "cat": "COMP",
+      "tag": "F",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "The traditional bank launches zero commissions to block your IPO",
+      "scenario": "The banking incumbent in your market launched a zero-commission offer for 12 months explicitly to block your IPO. They can afford it. You can't.",
+      "sx": {
+        "testo": "Report the practice as predatory to Antitrust",
+        "effetti": {
+          "trust": 8,
+          "cash": -20,
+          "note": "Long process. You lose users in the meantime."
+        }
+      },
+      "dx": {
+        "testo": "Total differentiation on services the bank doesn't have",
+        "effetti": {
+          "eco": 10,
+          "utenti": -8,
+          "churn": 6,
+          "cash": -20,
+          "note": "You abandon the mass market. Focus on the niche."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard you don't have the buffer to resist a zero offer for 12 months. The IPO window closes.",
+      "concept": "Predatory pricing and antitrust in financial services",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ECO-GEN-001",
+      "cat": "ECO",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "The first complementor asks for 40% of revenues",
+      "scenario": "The only developer willing to build on your platform — zero users, zero history — asks for 40% of the revenue they generate. They are your only complementor.",
+      "sx": {
+        "testo": "Refuse — it's too much",
+        "effetti": {
+          "eco": -10,
+          "note": "No complementor. Ecosystem Health starts out low already."
+        }
+      },
+      "dx": {
+        "testo": "Accept the 40%",
+        "effetti": {
+          "eco": 16,
+          "utenti": 5,
+          "cash": -8,
+          "note": "Very low margins but first active ecosystem."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the bargaining power of the complementor is maximum precisely when you are most vulnerable. You have no alternatives.",
+      "concept": "Complementor power asymmetry in cold start (Jacobides et al., 2018)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ECO-GEN-002",
+      "cat": "ECO",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Complementors organize into a union",
+      "scenario": "The developers on your platform formed an association and present a list of collective demands: more revenue share, fewer API restrictions, board representation.",
+      "sx": {
+        "testo": "Refuse to recognize the union",
+        "effetti": {
+          "eco": -18,
+          "trust": -8,
+          "note": "The developers might migrate en masse. Real Complementor Exodus."
+        }
+      },
+      "dx": {
+        "testo": "Negotiate with the union",
+        "effetti": {
+          "eco": 12,
+          "cash": -15,
+          "trust": 8,
+          "churn": 5,
+          "note": "You lose unilateral power but gain ecosystem stability."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the ecosystem is already fragile. Losing all complementors en masse is immediate game over.",
+      "concept": "Collective action by complementors (Jacobides et al., 2018)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ECO-GEN-003",
+      "cat": "ECO",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "The main complementor launches a rival platform",
+      "scenario": "The developer that brings 30% of your platform's traffic announced they are building a rival platform using everything they learned working with you.",
+      "sx": {
+        "testo": "Take legal action — NDA violated",
+        "effetti": {
+          "trust": -6,
+          "eco": -12,
+          "cash": -30,
+          "note": "Very long process. Meanwhile the developer speaks poorly of you publicly."
+        }
+      },
+      "dx": {
+        "testo": "Turn the competitor into a partner — coopetition agreement",
+        "effetti": {
+          "eco": 8,
+          "cash": -20,
+          "churn": 5,
+          "note": "Your ecosystem becomes bigger than theirs."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "Losing 30% of traffic in Hard can be a direct game over.",
+      "concept": "Coopetition and complementor graduation (Brandenburger & Nalebuff, 1996)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ECO-S-001",
+      "cat": "ECO",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Creators demand total algorithm transparency",
+      "scenario": "A coalition of 50 creators published an open letter asking to see how the algorithm decides their content distribution. If you refuse they threaten to migrate.",
+      "sx": {
+        "testo": "Refuse — it's proprietary IP",
+        "effetti": {
+          "eco": -14,
+          "trust": -8,
+          "note": "The coalition publishes the letter. Negative press."
+        }
+      },
+      "dx": {
+        "testo": "Publish a Creator Algorithm Report",
+        "effetti": {
+          "eco": 14,
+          "trust": 12,
+          "cash": -18,
+          "note": "Important precedent. Regulators notice positively."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": [
+          "regulatory_champion_flag"
+        ]
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the cost of the report is disproportionate. But losing 50 creators is potentially devastating.",
+      "concept": "Algorithmic transparency and creator rights",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ECO-B-001",
+      "cat": "ECO",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The system integrator threatens a product fork",
+      "scenario": "The system integrator partner that brings in 45% of your clients has the technical skills to fork your open-source product. They informed you they are considering it.",
+      "sx": {
+        "testo": "Change the license — closed source",
+        "effetti": {
+          "eco": -12,
+          "trust": -8,
+          "cash": -25,
+          "note": "The community reacts negatively. You lose other partners."
+        }
+      },
+      "dx": {
+        "testo": "Offer a commercial partnership with revenue sharing",
+        "effetti": {
+          "eco": 8,
+          "cash": -20,
+          "churn": 6,
+          "note": "The partner stays but with more bargaining power."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "Losing 45% of clients in Hard is almost certain game over.",
+      "concept": "Open source governance and fork risk",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ECO-F-001",
+      "cat": "ECO",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The partner bank revokes license sponsorship",
+      "scenario": "The bank sponsoring your EMI license decided to revoke the agreement with a 30-day notice. Without a sponsor the license falls.",
+      "sx": {
+        "testo": "Immediately look for an alternative bank",
+        "effetti": {
+          "cash": -30,
+          "eco": -8,
+          "note": "3 turns to find a new sponsor. Operations at risk in the meantime."
+        }
+      },
+      "dx": {
+        "testo": "Apply independently for an EMI license",
+        "effetti": {
+          "cash": -45,
+          "trust": 8,
+          "note": "12-month wait. You have to operate in reduced mode in the meantime."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard losing the EMI license is almost certainly game over. There are no painless solutions.",
+      "concept": "Regulatory dependency and license risk in Fintech",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-TEAM-GEN-001",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "The founder can no longer afford a salary",
+      "scenario": "To pay the team this month you must give up your salary for the next 3 months. It's not illegal. But it's unsustainable.",
+      "sx": {
+        "testo": "Do it without telling the team",
+        "effetti": {
+          "cash": 12,
+          "note": "The team doesn't know. But you are at risk of burnout in 2 turns."
+        }
+      },
+      "dx": {
+        "testo": "Communicate it as a conscious choice",
+        "effetti": {
+          "cash": 12,
+          "churn": 8,
+          "trust": 10,
+          "note": "The team respects you. Some offer to voluntarily do the same."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "An impossible situation in Normal, standard in Hard. The ethical choice and the strategic one coincide here.",
+      "concept": "Founder sacrifice and team trust building",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-TEAM-GEN-002",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The team asks for equity you cannot give",
+      "scenario": "Your 4 developers ask for a total 15% stock option pool before continuing. You already gave up 30% in previous rounds. You cannot dilute yourself further.",
+      "sx": {
+        "testo": "Refuse firmly",
+        "effetti": {
+          "churn": -12,
+          "note": "Two developers leave immediately. Operational crisis."
+        }
+      },
+      "dx": {
+        "testo": "Create a phantom equity plan tied to valuation",
+        "effetti": {
+          "churn": 8,
+          "cash": -5,
+          "note": "It's not real equity but it is real economic alignment."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the equity structure is already compressed by previous rounds. Phantom equity is a creative solution.",
+      "concept": "Equity alternatives and employee retention",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-TEAM-GEN-003",
+      "cat": "TEAM",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "The board wants to replace you as CEO",
+      "scenario": "Investors think you lack the skills to lead the company to an IPO. They propose an external CEO with your role reduced to Chief Product Officer.",
+      "sx": {
+        "testo": "Accept — the IPO is more important than ego",
+        "effetti": {
+          "valore": 20,
+          "trust": 10,
+          "note": "The market reads the governance positively. But you lose control."
+        }
+      },
+      "dx": {
+        "testo": "Refuse — it's your company",
+        "effetti": {
+          "valore": -15,
+          "note": "Investor Patience -20. The board can force the issue."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard investors have more leverage because you accepted more aggressive terms to survive.",
+      "concept": "Founder CEO succession and investor control rights",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-TEAM-S-001",
+      "cat": "TEAM",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Head of Community resigns publicly",
+      "scenario": "Your Head of Community tweeted their resignation, explaining that they can no longer defend the platform's ethical choices. They have 80K followers.",
+      "sx": {
+        "testo": "Don't respond — it's an internal matter",
+        "effetti": {
+          "trust": -16,
+          "eco": -8,
+          "note": "Silence is read as confirmation of the accusations."
+        }
+      },
+      "dx": {
+        "testo": "Public response and concrete demonstration of change",
+        "effetti": {
+          "trust": 6,
+          "cash": -20,
+          "eco": 4,
+          "note": "It costs money to commit publicly. But it's the only credible response."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the reputation is already fragile. A public resignation can be the catalyst for a wider crisis.",
+      "concept": "Public exit and reputational spillover",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-TEAM-B-001",
+      "cat": "TEAM",
+      "tag": "B",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "The only developer knows all the code and wants to leave",
+      "scenario": "Your only developer has all the codebase knowledge in their head. They received an offer. If they leave the product stops.",
+      "sx": {
+        "testo": "Retain them with a 40% raise",
+        "effetti": {
+          "cash": -20,
+          "churn": 8,
+          "note": "Runway shortens by 2 months. The structural problem remains."
+        }
+      },
+      "dx": {
+        "testo": "Let them go and hire two junior developers",
+        "effetti": {
+          "cash": -15,
+          "churn": -8,
+          "note": "3 turns of onboarding. The product slows down but risk is distributed."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the key-man risk is existential. Both options have costs that could be fatal.",
+      "concept": "Key-person dependency and knowledge management",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-GEN-001",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Early acquisition offer — 4x initial capital",
+      "scenario": "A mid-size player offers 400K to acquire your early product. It's 4x your initial capital. But you just launched.",
+      "sx": {
+        "testo": "Sell — it's a win with this budget",
+        "effetti": {
+          "note": "Game over. Ending: Early Exit — Soft Landing. 400K distributed between founder and team."
+        }
+      },
+      "dx": {
+        "testo": "Refuse — you want to build something bigger",
+        "effetti": {
+          "churn": 6,
+          "trust": 8,
+          "note": "The market notices you refused. Signal of confidence in the vision."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard 400K is a concrete temptation. In Normal it would be negligible. The dilemma is real.",
+      "concept": "Early exit vs long-term vision under resource constraints",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-GEN-002",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Public grant with partial IP assignment",
+      "scenario": "A regional grant offers 150K non-dilutive for digital startups. Condition: the intellectual property of the funded product becomes partially public.",
+      "sx": {
+        "testo": "Refuse — the IP is your main asset",
+        "effetti": {
+          "note": "No cash. Runway unchanged."
+        }
+      },
+      "dx": {
+        "testo": "Accept — 150K right now is worth more than a theoretical IP",
+        "effetti": {
+          "cash": 150,
+          "trust": 5,
+          "note": "Partially public IP. Competitors might use it."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard 150K can be the difference between survival and game over. The IP trade-off is real.",
+      "concept": "Public funding and intellectual property trade-offs",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-GEN-003",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The VC wants 35% — take it or leave it",
+      "scenario": "The only VC willing to invest at this stage offers 500K for 35% equity. It's aggressive. And it's the only offer on the table.",
+      "sx": {
+        "testo": "Refuse — unsustainable dilution",
+        "effetti": {
+          "note": "No cash. You have to find another way or risk game over for Cash."
+        }
+      },
+      "dx": {
+        "testo": "Accept — survival above all",
+        "effetti": {
+          "cash": 500,
+          "note": "Investor Patience activated. You effectively lose control over governance."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": [
+          "investor_patience_active"
+        ]
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard this might be the only alternative to game over. 35% is the price of survival.",
+      "concept": "Distressed financing and founder dilution",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-GEN-004",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Revenue based financing — debt on revenue",
+      "scenario": "A fund offers 200K in revenue-based financing: you pay back 6% of monthly revenue up to 300K total. No equity dilution.",
+      "sx": {
+        "testo": "Refuse — it's disguised debt",
+        "effetti": {
+          "note": "No cash. Runway unchanged."
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "cash": 200,
+          "note": "Every month 6% of revenue goes to repayment. In Hard it can be a noose if growth is slow."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "A financial instrument that is negligible in Normal, in Hard it becomes a critical decision.",
+      "concept": "Alternative financing instruments for resource-constrained startups",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-GEN-005",
+      "cat": "OPP",
+      "tag": "GEN",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Discounted valuation IPO — closing window",
+      "scenario": "The market is volatile. Your underwriter proposes proceeding with a valuation 30% lower than the target to guarantee the placement. Delaying means risking the window.",
+      "sx": {
+        "testo": "Delay — wait for better conditions",
+        "effetti": {
+          "valore": -5,
+          "note": "Investor Patience -15. The window might not reopen."
+        }
+      },
+      "dx": {
+        "testo": "Proceed with the discount",
+        "effetti": {
+          "note": "Game over. IPO at 30% reduced valuation. Ending calculated on the new value."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the valuation was already low. A 30% discount can bring it below the IPO threshold.",
+      "concept": "IPO pricing under market uncertainty",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-S-001",
+      "cat": "OPP",
+      "tag": "S",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Creator banned by competitors seeks a second chance",
+      "scenario": "A creator with 2M followers was banned by competitors for borderline behavior. They want to start over on your platform. They bring traffic but also reputational baggage.",
+      "sx": {
+        "testo": "Refuse — too risky",
+        "effetti": {
+          "eco": 2,
+          "trust": 4
+        }
+      },
+      "dx": {
+        "testo": "Accept with a conduct agreement",
+        "effetti": {
+          "utenti": 18,
+          "eco": 8,
+          "trust": -6,
+          "note": "If the creator misbehaves again, the damage is yours."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard 18 units of traction is huge. Reputational risk is a cost you might not be able to afford.",
+      "concept": "Platform second chances and reputational risk",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-S-002",
+      "cat": "OPP",
+      "tag": "S",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Acquire a micro-platform with 80K loyal users",
+      "scenario": "A niche micro-platform with 80K very loyal users is up for sale for 120K. It's almost all your runway.",
+      "sx": {
+        "testo": "Don't acquire — too risky",
+        "effetti": {
+          "note": "No impact. Runway preserved."
+        }
+      },
+      "dx": {
+        "testo": "Acquire",
+        "effetti": {
+          "cash": -120,
+          "utenti": 20,
+          "churn": 10,
+          "eco": 8,
+          "note": "Runway almost wiped out. But loyal users with very high Anti-Churn."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard spending 120K when you have 100K initially is an existential bet.",
+      "concept": "Acqui-hire and user base acquisition",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-S-003",
+      "cat": "OPP",
+      "tag": "S",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Media company wants 40% — not 100%",
+      "scenario": "A media group offers to buy 40% of your platform at a valuation implying 180M total. It's not an exit but it's liquidity and distribution.",
+      "sx": {
+        "testo": "Refuse — you want the platform independent",
+        "effetti": {
+          "note": "Investor Patience -10. No cash."
+        }
+      },
+      "dx": {
+        "testo": "Accept the strategic partnership",
+        "effetti": {
+          "cash": 200,
+          "utenti": 12,
+          "eco": 8,
+          "valore": 15,
+          "note": "You lose partial editorial independence. You gain distribution."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard this might be the only way to reach IPO valuation without an aggressive VC round.",
+      "concept": "Strategic minority investment and editorial independence",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-B-001",
+      "cat": "OPP",
+      "tag": "B",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Free pilot with a public entity — valuable reference",
+      "scenario": "A regional public entity wants to pilot your SaaS for free for 6 months. In return: public reference and access to 200 SMEs in their network.",
+      "sx": {
+        "testo": "Refuse — too much bureaucracy, zero cash",
+        "effetti": {
+          "note": "No impact. Saves 3 turns of effort."
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "utenti": 8,
+          "trust": 12,
+          "eco": 6,
+          "note": "6 free months. The public reference opens doors in the Italian enterprise market."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard giving up cash for 6 months is a real sacrifice. But the public reference in B2B is worth a lot.",
+      "concept": "Public sector as anchor client in B2B",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-B-002",
+      "cat": "OPP",
+      "tag": "B",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "Acquisition of a struggling competitor",
+      "scenario": "A direct competitor ran out of runway and offers their product and clients for 80K. Their 12 clients are worth double that in MRR.",
+      "sx": {
+        "testo": "Don't buy — you need that cash",
+        "effetti": {
+          "note": "No impact. Runway preserved."
+        }
+      },
+      "dx": {
+        "testo": "Acquire",
+        "effetti": {
+          "cash": -80,
+          "utenti": 12,
+          "churn": 8,
+          "eco": 6,
+          "note": "MRR doubles but runway is almost wiped out. High stakes bet."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "Spending 80K out of 100K initially is obvious in Normal, in Hard it's almost suicidal unless MRR covers the burn.",
+      "concept": "Distressed M&A and revenue acceleration",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-B-003",
+      "cat": "OPP",
+      "tag": "B",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "PE fund wants 60% — aggressive scaling in 3 years",
+      "scenario": "A private equity fund offers to buy 60% at a 3M total implied valuation. The plan is to scale aggressively in 3 years and then go public. You lose control.",
+      "sx": {
+        "testo": "Refuse — you don't want to lose control",
+        "effetti": {
+          "note": "Investor Patience -12. The alternative is continuing with current resources."
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "cash": 600,
+          "valore": 20,
+          "note": "Game over if you accept as an exit. Or continue with PE as dominant partner."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard 3M is a generous valuation compared to the multiples you might get with an unsupported IPO.",
+      "concept": "Private equity buyout and founder control",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-F-001",
+      "cat": "OPP",
+      "tag": "F",
+      "fase": 1,
+      "fase_lock": false,
+      "nome": "Crypto exchange wants a partnership — fast money high risk",
+      "scenario": "A crypto exchange offers 200K for a co-branding partnership. The money is real. But the association with crypto could compromise your banking license.",
+      "sx": {
+        "testo": "Refuse — too risky for the license",
+        "effetti": {
+          "trust": 8,
+          "eco": 4,
+          "note": "No cash. Runway unchanged."
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "cash": 200,
+          "trust": -16,
+          "note": "Bank of Italy notices the association. PSD2 license process complicated."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard 200K is almost double the initial capital. The temptation is real. The consequences are severe.",
+      "concept": "Regulatory risk in Fintech partnerships",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-F-002",
+      "cat": "OPP",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "European Guarantee Fund — guaranteed lending",
+      "scenario": "The European Investment Fund offers a guarantee on 300K of loans you can disburse. It's not direct cash but it unlocks a product you can sell.",
+      "sx": {
+        "testo": "Not now — too complex",
+        "effetti": {
+          "eco": -4
+        }
+      },
+      "dx": {
+        "testo": "Apply",
+        "effetti": {
+          "eco": 14,
+          "trust": 10,
+          "valore": 15,
+          "note": "3 turns of waiting. Then unlocks lending product with public guarantee."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard guaranteed lending can be the only way to generate significant revenue without equity.",
+      "concept": "European Investment Fund guarantees and Fintech scaling",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-OPP-F-003",
+      "cat": "OPP",
+      "tag": "F",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Acquisition by an American bank — outside the EU",
+      "scenario": "An American bank offers 5M for 100%. It's above any realistic IPO valuation. But it takes your platform outside PSD2 jurisdiction and your original mission.",
+      "sx": {
+        "testo": "Refuse — you want to stay European",
+        "effetti": {
+          "trust": 8,
+          "note": "Investor Patience -15. The window might close."
+        }
+      },
+      "dx": {
+        "testo": "Accept",
+        "effetti": {
+          "note": "Game over. Ending: Strategic Exit — American Bank. Platform migrates outside EU within 18 months."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard 5M is often the only exit that vastly exceeds the realistic IPO valuation. The dilemma between mission and economic return is at its peak.",
+      "concept": "Cross-border M&A and mission drift in Fintech",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-ECO-F-002",
+      "cat": "ECO",
+      "tag": "F",
+      "fase": 3,
+      "fase_lock": false,
+      "nome": "Fintech partner demands board seat as a condition",
+      "scenario": "Your most important fintech complementor — bringing in 25% of users — asks for a board seat as a condition to renew the partnership. In Phase 3 this complicates the IPO process.",
+      "sx": {
+        "testo": "Refuse — the board must stay clean for IPO",
+        "effetti": {
+          "eco": -14,
+          "utenti": -8,
+          "note": "You lose the complementor. Ecosystem Health plummets. IPO at risk due to valuation."
+        }
+      },
+      "dx": {
+        "testo": "Accept with a post-IPO exit clause",
+        "effetti": {
+          "eco": 12,
+          "trust": -6,
+          "valore": -8,
+          "note": "The board becomes more complex. Underwriters demand explanations."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard the complementor knows you have few alternatives. Their bargaining power in Phase 3 is maximal.",
+      "concept": "Complementor power inversion in late stage (Jacobides et al., 2018)",
+      "difficulty": [
+        "HARD"
+      ]
+    },
+    {
+      "id": "H-TEAM-F-001",
+      "cat": "TEAM",
+      "tag": "F",
+      "fase": 2,
+      "fase_lock": false,
+      "nome": "The compliance officer threatens to leave — too much pressure",
+      "scenario": "Your Head of Compliance has submitted a resignation letter. They say their recommendations are systematically ignored. If they leave you are exposed to regulators.",
+      "sx": {
+        "testo": "Retain them with a raise",
+        "effetti": {
+          "cash": -18,
+          "trust": 4,
+          "note": "They stay but the structural problem remains. Are the recommendations still ignored?"
+        }
+      },
+      "dx": {
+        "testo": "Let them go and look for a replacement",
+        "effetti": {
+          "trust": -12,
+          "cash": -10,
+          "note": "3 turns without a compliance officer. During that time every Crisis card has amplified effects."
+        }
+      },
+      "flags_required": [],
+      "flags_set": {
+        "sx": [],
+        "dx": []
+      },
+      "trigger": null,
+      "difficulty_note": "In Hard replacing a key regulatory figure is slow and expensive. 3 turns of exposure can be fatal.",
+      "concept": "Compliance function and regulatory risk in Fintech",
+      "difficulty": [
+        "HARD"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2800 @@
+{
+    "meta": {
+        "version": "1.0",
+        "gdd_ref": "UNICORN.CEO GDD v3.5",
+        "description": "Catalogo carte per tre run Normal (Social Network, SaaS B2B, Fintech). Ogni run pesca 60 carte dal pool disponibile rispettando la distribuzione per categoria e fase."
+    },
+    "cards": [
+        {
+            "id": "CFO-001",
+            "cat": "CFO",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": true,
+            "nome": "CFO #01 — Cold Start Problem",
+            "scenario": "La piattaforma è vuota. Senza utenti non ci sono creator/clienti, senza creator/clienti non ci sono utenti. Devi rompere questo circolo.",
+            "sx": {
+                "testo": "—",
+                "effetti": {}
+            },
+            "dx": {
+                "testo": "Ho capito",
+                "effetti": {
+                    "note": "Sblocca slot Team Espanso. K-factor attuale mostrato in dashboard."
+                }
+            },
+            "swipeable": false,
+            "concept": "Cold start problem (Parker & Van Alstyne, 2016)"
+        },
+        {
+            "id": "CFO-002",
+            "cat": "CFO",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "CFO #02 — Il K-factor",
+            "scenario": "K-factor < 1: ogni utente porta meno di un nuovo utente. K-factor > 1: la piattaforma cresce da sola. Sei sotto o sopra la soglia?",
+            "sx": {
+                "testo": "—",
+                "effetti": {}
+            },
+            "dx": {
+                "testo": "Ho capito",
+                "effetti": {
+                    "note": "K-factor visibile in dashboard. Aggiornato ogni turno."
+                }
+            },
+            "swipeable": false,
+            "concept": "Viral coefficient / K-factor (Andreessen Horowitz framework)"
+        },
+        {
+            "id": "CFO-003",
+            "cat": "CFO",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "CFO #03 — Runway e burn rate",
+            "scenario": "Hai X mesi di runway. Ogni decisione che prendi cambia il burn rate. Il cash non è infinito — è un orologio.",
+            "sx": {
+                "testo": "—",
+                "effetti": {}
+            },
+            "dx": {
+                "testo": "Ho capito",
+                "effetti": {
+                    "note": "Runway calcolato dinamicamente. Warning automatico sotto 3 mesi."
+                }
+            },
+            "swipeable": false,
+            "concept": "Startup finance fundamentals"
+        },
+        {
+            "id": "CFO-004",
+            "cat": "CFO",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "CFO #04 — Network effects",
+            "scenario": "Legge di Metcalfe: il valore della rete cresce con il quadrato degli utenti. Ogni utente aggiunto vale più del precedente.",
+            "sx": {
+                "testo": "—",
+                "effetti": {}
+            },
+            "dx": {
+                "testo": "Ho capito",
+                "effetti": {
+                    "kfactor": 0.05,
+                    "note": "Piccolo boost K-factor per comprensione del meccanismo."
+                }
+            },
+            "swipeable": false,
+            "concept": "Network effects, Metcalfe's Law (Eisenmann, Parker & Van Alstyne, 2006)"
+        },
+        {
+            "id": "CFO-005",
+            "cat": "CFO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": true,
+            "nome": "CFO #05 — Legge di Metcalfe in azione",
+            "scenario": "Hai superato la massa critica. La crescita organica inizia. Da adesso ogni utente acquisito vale più del precedente — e te ne costa meno.",
+            "sx": {
+                "testo": "—",
+                "effetti": {}
+            },
+            "dx": {
+                "testo": "Ho capito",
+                "effetti": {
+                    "utenti": 1,
+                    "note": "+1 Utenti automatico ogni turno finché K-factor > 1.0."
+                }
+            },
+            "swipeable": false,
+            "concept": "Tipping point / critical mass (Parker & Van Alstyne, 2016)"
+        },
+        {
+            "id": "CFO-006",
+            "cat": "CFO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "CFO #06 — Monetizzazione",
+            "scenario": "Tre modelli: ads (cash immediato, rischio polarizzazione), subscription (MRR stabile, attrito), platform fee (allineamento ecosistema, margini bassi).",
+            "sx": {
+                "testo": "—",
+                "effetti": {}
+            },
+            "dx": {
+                "testo": "Ho capito",
+                "effetti": {
+                    "note": "Sblocca slot Partnership Media. Scelta revenue model primario."
+                }
+            },
+            "swipeable": false,
+            "concept": "Platform monetization models (Parker & Van Alstyne, 2016)"
+        },
+        {
+            "id": "CFO-007",
+            "cat": "CFO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "CFO #07 — Switching costs",
+            "scenario": "Più alto è il costo percepito di uscita, più alto è l'Anti-Churn. Ma switching costs artificiali erodono il Trust istituzionale.",
+            "sx": {
+                "testo": "—",
+                "effetti": {}
+            },
+            "dx": {
+                "testo": "Ho capito",
+                "effetti": {
+                    "note": "Tensione Anti-Churn vs Trust ora visibile in dashboard."
+                }
+            },
+            "swipeable": false,
+            "concept": "Switching costs e lock-in (Shapiro & Varian, 1999)"
+        },
+        {
+            "id": "CFO-008",
+            "cat": "CFO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": true,
+            "nome": "CFO #08 — Slot strategici",
+            "scenario": "Tre slot disponibili: Team Espanso (fisso), Partnership Media (contrattuale), R&S Attiva (variabile). Ogni slot costa risorse — scegli con cura.",
+            "sx": {
+                "testo": "—",
+                "effetti": {}
+            },
+            "dx": {
+                "testo": "Ho capito",
+                "effetti": {
+                    "note": "Tutti gli slot ora attivi. R&S sbloccabile a tre livelli."
+                }
+            },
+            "swipeable": false,
+            "concept": "Resource allocation under constraints"
+        },
+        {
+            "id": "CFO-009",
+            "cat": "CFO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "CFO #09 — Platform governance",
+            "scenario": "Hai preso la tua seconda decisione strutturale. Da adesso non sei solo un'azienda — sei un regolatore privato. Le tue regole definiscono chi può fare cosa.",
+            "sx": {
+                "testo": "—",
+                "effetti": {}
+            },
+            "dx": {
+                "testo": "Ho capito",
+                "effetti": {
+                    "eco": 5,
+                    "note": "Ecosystem Health ora influenza Valore Aziendale. Sblocca carta CFO #10."
+                }
+            },
+            "swipeable": false,
+            "flags_set": {
+                "dx": [
+                    "platform_governance_unlocked"
+                ]
+            },
+            "concept": "Platform governance (Gawer, 2022)"
+        },
+        {
+            "id": "CFO-010",
+            "cat": "CFO",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": true,
+            "nome": "CFO #10 — Countdown IPO",
+            "scenario": "Hai 17 mesi. Sei abbastanza grande da essere un problema per qualcuno. Fondazione o collo di bottiglia? Il mercato ti osserva.",
+            "sx": {
+                "testo": "—",
+                "effetti": {}
+            },
+            "dx": {
+                "testo": "Ho capito",
+                "effetti": {
+                    "note": "Checklist IPO sbloccata. Valutazione dinamica aggiornata in dashboard."
+                }
+            },
+            "swipeable": false,
+            "flags_required": [
+                "platform_governance_unlocked"
+            ],
+            "concept": "Foundation vs bottleneck (Jacobides, Cennamo & Gawer, 2018)"
+        },
+        {
+            "id": "GEN-TEAM-001",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Il primo ingegnere",
+            "scenario": "Un ex collega con esperienza in scaling chiede equity invece di stipendio pieno. È bravo ma il 6% è tanto per questa fase.",
+            "sx": {
+                "testo": "Stipendio pieno",
+                "effetti": {
+                    "cash": -12,
+                    "churn": 4,
+                    "note": "Costo fisso mensile ma team stabile da subito."
+                }
+            },
+            "dx": {
+                "testo": "Equity deal",
+                "effetti": {
+                    "churn": 8,
+                    "valore": 3,
+                    "note": "Allineamento lungo periodo. Nessun costo mensile."
+                }
+            },
+            "concept": "Founder-employee equity alignment"
+        },
+        {
+            "id": "GEN-TEAM-002",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Il CTO vuole libertà tecnica",
+            "scenario": "Il CTO vuole autonomia totale sulle scelte architetturali. Accetti o mantieni supervisione diretta?",
+            "sx": {
+                "testo": "Supervisione diretta",
+                "effetti": {
+                    "churn": -4,
+                    "trust": 3,
+                    "note": "Più controllo, meno velocità."
+                }
+            },
+            "dx": {
+                "testo": "Autonomia totale",
+                "effetti": {
+                    "churn": 8,
+                    "utenti": 3,
+                    "note": "Rischio debito tecnico ma velocità di sviluppo alta."
+                }
+            },
+            "concept": "Organizational autonomy vs control"
+        },
+        {
+            "id": "GEN-TEAM-003",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Designer freelance o assunzione?",
+            "scenario": "La UI è scarsa e rallenta la conversione. Un freelance è veloce, un'assunzione è più costosa ma fidelizzata.",
+            "sx": {
+                "testo": "Freelance",
+                "effetti": {
+                    "cash": -15,
+                    "utenti": 5,
+                    "churn": -3
+                }
+            },
+            "dx": {
+                "testo": "Assunzione junior con equity",
+                "effetti": {
+                    "cash": -8,
+                    "utenti": 8,
+                    "churn": 6
+                }
+            },
+            "concept": "Build vs buy — human capital"
+        },
+        {
+            "id": "GEN-TEAM-004",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Il CTO minaccia di andarsene",
+            "scenario": "Il tuo CTO ha un'offerta da un competitor con il 30% in più di stipendio. Controfferti o lo lasci partire?",
+            "sx": {
+                "testo": "Lo lasci partire",
+                "effetti": {
+                    "churn": -12,
+                    "utenti": -5,
+                    "note": "Rischio perdita know-how critico."
+                }
+            },
+            "dx": {
+                "testo": "Controfferti con equity extra",
+                "effetti": {
+                    "churn": 6,
+                    "trust": 4,
+                    "note": "Il team vede che proteggi le persone chiave."
+                }
+            },
+            "flags_set": {
+                "dx": [
+                    "cto_retained"
+                ]
+            },
+            "concept": "Key person retention"
+        },
+        {
+            "id": "GEN-TEAM-005",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Burnout del team",
+            "scenario": "Tre mesi di sprint continui. Il team mostra segnali di esaurimento. Rallenti o spingi per il lancio della feature?",
+            "sx": {
+                "testo": "Spingi — il lancio è prioritario",
+                "effetti": {
+                    "utenti": 6,
+                    "churn": -10,
+                    "note": "Alto rischio dimissioni nei 2 turni successivi."
+                }
+            },
+            "dx": {
+                "testo": "Rallenti — team first",
+                "effetti": {
+                    "churn": 10,
+                    "utenti": -3,
+                    "cash": -8
+                }
+            },
+            "concept": "Organizational health and sustainability"
+        },
+        {
+            "id": "GEN-TEAM-006",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Head of Marketing — assunzione",
+            "scenario": "La crescita organica rallenta. Serve qualcuno dedicato al marketing. Budget disponibile per una sola assunzione senior.",
+            "sx": {
+                "testo": "Growth hacker junior",
+                "effetti": {
+                    "cash": -10,
+                    "utenti": 8,
+                    "kfactor": 0.05
+                }
+            },
+            "dx": {
+                "testo": "CMO senior con track record",
+                "effetti": {
+                    "cash": -22,
+                    "utenti": 14,
+                    "kfactor": 0.1,
+                    "valore": 8
+                }
+            },
+            "concept": "Human capital investment timing"
+        },
+        {
+            "id": "GEN-TEAM-007",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Conflitto co-fondatori",
+            "scenario": "Il co-fondatore vuole pivotare verso un mercato diverso. Tu vuoi mantenere la rotta. La tensione è pubblica nel team.",
+            "sx": {
+                "testo": "Ascolti e adatti la visione",
+                "effetti": {
+                    "churn": 4,
+                    "utenti": 3,
+                    "eco": -4,
+                    "note": "Compromesso debole ma pace interna."
+                }
+            },
+            "dx": {
+                "testo": "Tieni la rotta — anche a costo del conflitto",
+                "effetti": {
+                    "churn": 8,
+                    "cash": -15,
+                    "note": "Legali per ristrutturazione equity. Squadra più coesa."
+                }
+            },
+            "concept": "Founder dynamics and governance"
+        },
+        {
+            "id": "GEN-TEAM-008",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Il competitor fa un'offerta al tuo team",
+            "scenario": "Il competitor ha contattato i tuoi tre developer migliori. Offerte superiori del 40% al loro stipendio attuale.",
+            "sx": {
+                "testo": "Non puoi competere economicamente",
+                "effetti": {
+                    "churn": -16,
+                    "utenti": -5,
+                    "note": "Crisi operativa nei 3 turni successivi."
+                }
+            },
+            "dx": {
+                "testo": "Equity accelerata per tutti e tre",
+                "effetti": {
+                    "churn": 8,
+                    "valore": -5,
+                    "note": "Diluisci ma tieni il team."
+                }
+            },
+            "concept": "Talent retention in competitive markets"
+        },
+        {
+            "id": "GEN-TEAM-009",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Successione — prepari il management team per l'IPO",
+            "scenario": "Gli investitori vogliono un CEO professionale o almeno un COO per l'IPO. Sei disposto a cedere parte del controllo operativo?",
+            "sx": {
+                "testo": "Rimani CEO — gestisci tutto tu",
+                "effetti": {
+                    "trust": -6,
+                    "valore": -8,
+                    "note": "Il mercato è scettico sulla governance."
+                }
+            },
+            "dx": {
+                "testo": "Assumi un COO senior",
+                "effetti": {
+                    "cash": -25,
+                    "trust": 12,
+                    "valore": 15,
+                    "churn": 5
+                }
+            },
+            "concept": "Corporate governance and IPO readiness"
+        },
+        {
+            "id": "GEN-TEAM-010",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Remote o in presenza?",
+            "scenario": "Il team vuole lavorare full remote. Tu credi che la prossimità fisica acceleri le decisioni nelle fasi early.",
+            "sx": {
+                "testo": "Full remote — massima flessibilità",
+                "effetti": {
+                    "churn": 6,
+                    "cash": -4,
+                    "utenti": 3
+                }
+            },
+            "dx": {
+                "testo": "In presenza obbligatorio",
+                "effetti": {
+                    "churn": -4,
+                    "utenti": 5,
+                    "cash": -18,
+                    "note": "Costo ufficio. Alcuni rifiutano e se ne vanno."
+                }
+            },
+            "concept": "Organizational design"
+        },
+        {
+            "id": "GEN-TEAM-011",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "OKR o gestione libera?",
+            "scenario": "Il team è cresciuto a 12 persone. Senza struttura si perde allineamento. Ma troppa struttura uccide la velocità.",
+            "sx": {
+                "testo": "OKR trimestrali formali",
+                "effetti": {
+                    "churn": 5,
+                    "utenti": 4,
+                    "cash": -5
+                }
+            },
+            "dx": {
+                "testo": "Gestione informale — fiducia nel team",
+                "effetti": {
+                    "churn": -3,
+                    "utenti": 6,
+                    "note": "Rischio misalignment in Fase 3."
+                }
+            },
+            "concept": "Organizational scaling and management systems"
+        },
+        {
+            "id": "GEN-TEAM-012",
+            "cat": "TEAM",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Piano di incentivi pre-IPO",
+            "scenario": "Il board vuole un piano di stock option per trattenere il team chiave fino e dopo l'IPO. Costa equity ma riduce il rischio di exodus.",
+            "sx": {
+                "testo": "Piano minimo — solo C-level",
+                "effetti": {
+                    "churn": 3,
+                    "valore": -5
+                }
+            },
+            "dx": {
+                "testo": "Piano esteso — tutta la squadra",
+                "effetti": {
+                    "churn": 14,
+                    "valore": -12,
+                    "trust": 8,
+                    "note": "Mercato legge positivamente la retention."
+                }
+            },
+            "concept": "Employee incentive design"
+        },
+        {
+            "id": "GEN-ECO-001",
+            "cat": "ECO",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "API aperte o chiuse",
+            "scenario": "Aprire le API ai developer esterni porta utenti ma espone la piattaforma alla concorrenza indiretta. Chiuderle garantisce controllo.",
+            "sx": {
+                "testo": "API chiuse",
+                "effetti": {
+                    "eco": -5,
+                    "churn": 5,
+                    "note": "Ecosistema controllato ma crescita più lenta."
+                }
+            },
+            "dx": {
+                "testo": "API aperte",
+                "effetti": {
+                    "eco": 15,
+                    "utenti": 4,
+                    "cash": -8
+                }
+            },
+            "concept": "Platform openness strategy (Eisenmann, 2008)"
+        },
+        {
+            "id": "GEN-ECO-002",
+            "cat": "ECO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Developer conference",
+            "scenario": "Organizzi il primo evento annuale per i developer della piattaforma. Segnala commitment verso l'ecosistema.",
+            "sx": {
+                "testo": "Evento simbolico — budget basso",
+                "effetti": {
+                    "eco": 6,
+                    "cash": -20
+                }
+            },
+            "dx": {
+                "testo": "Evento flagship",
+                "effetti": {
+                    "eco": 20,
+                    "utenti": 8,
+                    "trust": 5,
+                    "cash": -80
+                }
+            },
+            "concept": "Ecosystem cultivation and signaling"
+        },
+        {
+            "id": "GEN-ECO-003",
+            "cat": "ECO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Community di developer auto-organizzata",
+            "scenario": "Un gruppo di developer ha creato un forum non ufficiale. Vuoi istituzionalizzarlo o lasciarlo indipendente?",
+            "sx": {
+                "testo": "Lasci indipendente",
+                "effetti": {
+                    "eco": 8,
+                    "trust": 3,
+                    "note": "Perdi controllo narrativo ma autenticità alta."
+                }
+            },
+            "dx": {
+                "testo": "Istituzionalizzi e partecipi",
+                "effetti": {
+                    "eco": 14,
+                    "trust": 8,
+                    "churn": 5,
+                    "cash": -12
+                }
+            },
+            "concept": "Community governance"
+        },
+        {
+            "id": "GEN-ECO-004",
+            "cat": "ECO",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Complementor chiave minaccia di uscire",
+            "scenario": "Il developer della tua app più usata (9% degli utenti totali) vuole condizioni migliori o migra al competitor.",
+            "sx": {
+                "testo": "Non cedi — principio",
+                "effetti": {
+                    "eco": -18,
+                    "utenti": -8,
+                    "note": "Il developer migra. Base Utenti cala nei 2 turni successivi."
+                }
+            },
+            "dx": {
+                "testo": "Tratti e cedi",
+                "effetti": {
+                    "eco": 10,
+                    "cash": -22,
+                    "churn": 5
+                }
+            },
+            "concept": "Complementor power dynamics (Jacobides, Cennamo & Gawer, 2018)"
+        },
+        {
+            "id": "GEN-ECO-005",
+            "cat": "ECO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Developer program formale",
+            "scenario": "Lanci un programma formale per i developer: documentazione, sandbox, supporto dedicato. Costa ma segnala maturità.",
+            "sx": {
+                "testo": "Non ora — troppo presto",
+                "effetti": {
+                    "eco": -6,
+                    "note": "I developer scelgono piattaforme più mature."
+                }
+            },
+            "dx": {
+                "testo": "Lanci il developer program",
+                "effetti": {
+                    "eco": 16,
+                    "utenti": 6,
+                    "trust": 6,
+                    "cash": -35
+                }
+            },
+            "concept": "Platform ecosystem investment"
+        },
+        {
+            "id": "GEN-COMP-001",
+            "cat": "COMP",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Competitor Alert — il rivale cresce",
+            "scenario": "Il competitor principale ha appena chiuso un round da 3M€. Sta assumendo aggressivamente nel tuo stesso mercato.",
+            "sx": {
+                "testo": "Nicchia verticale — non ti scontri",
+                "effetti": {
+                    "eco": 6,
+                    "trust": 4,
+                    "utenti": -3,
+                    "note": "Differenziazione difendibile."
+                }
+            },
+            "dx": {
+                "testo": "Attacchi frontalmente",
+                "effetti": {
+                    "cash": -30,
+                    "utenti": 10,
+                    "churn": -5
+                }
+            },
+            "concept": "Competitive positioning (Porter, 1980)"
+        },
+        {
+            "id": "GEN-COMP-002",
+            "cat": "COMP",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Multi-homing alert",
+            "scenario": "Il 20% degli utenti usa anche una piattaforma competitor. Lanci una funzione di lock-in o rimani aperto?",
+            "sx": {
+                "testo": "Rimani aperto",
+                "effetti": {
+                    "trust": 8,
+                    "churn": -6
+                }
+            },
+            "dx": {
+                "testo": "Feature lock-in",
+                "effetti": {
+                    "churn": 10,
+                    "trust": -12,
+                    "cash": 5,
+                    "note": "Nota regolatoria potenziale."
+                }
+            },
+            "concept": "Multi-homing and switching costs (Parker & Van Alstyne, 2016)"
+        },
+        {
+            "id": "GEN-COMP-003",
+            "cat": "COMP",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Il competitor copia la tua feature principale",
+            "scenario": "Hai sviluppato per 3 mesi una feature differenziante. Il competitor la lancia prima, leggermente diversa.",
+            "sx": {
+                "testo": "Lanci comunque — era tua prima",
+                "effetti": {
+                    "utenti": 5,
+                    "trust": 4,
+                    "churn": 3
+                }
+            },
+            "dx": {
+                "testo": "Pivoti verso qualcosa di diverso",
+                "effetti": {
+                    "cash": -20,
+                    "eco": 8,
+                    "utenti": -3,
+                    "note": "Rischio ma differenziazione genuina."
+                }
+            },
+            "concept": "First-mover vs fast-follower dynamics"
+        },
+        {
+            "id": "GEN-COMP-004",
+            "cat": "COMP",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Offerta di acquisizione dal competitor",
+            "scenario": "Il competitor principale offre una cifra sopra il valore di IPO stimato. Strategic Exit disponibile.",
+            "sx": {
+                "testo": "Rifiuti — punta all'IPO",
+                "effetti": {
+                    "valore": 35,
+                    "note": "Il mercato legge il rifiuto come segnale di forza. Investor Patience -10."
+                }
+            },
+            "dx": {
+                "testo": "Accetti",
+                "effetti": {
+                    "note": "Ending: Strategic Exit — Competitor."
+                }
+            },
+            "concept": "Exit strategy and valuation"
+        },
+        {
+            "id": "GEN-COMP-005",
+            "cat": "COMP",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Il competitor ottiene funding massiccio",
+            "scenario": "Il rivale ha appena chiuso una Serie C da 50M€. Non puoi competere sulla scala. Cosa fai?",
+            "sx": {
+                "testo": "Ultra-specializzazione verticale",
+                "effetti": {
+                    "eco": 10,
+                    "trust": 8,
+                    "utenti": -6,
+                    "cash": 5
+                }
+            },
+            "dx": {
+                "testo": "Acceleri verso l'IPO prima di loro",
+                "effetti": {
+                    "cash": -40,
+                    "valore": 20,
+                    "note": "Investor Patience -8. Finestra IPO si stringe."
+                }
+            },
+            "concept": "Competitive dynamics under asymmetric resources"
+        },
+        {
+            "id": "GEN-CRISI-001",
+            "cat": "CRISI",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Bug in produzione",
+            "scenario": "Un bug espone metadati di 3.000 utenti. Nessun danno diretto ma la stampa tech lo ha notato.",
+            "sx": {
+                "testo": "Gestione silenziosa",
+                "effetti": {
+                    "trust": -12,
+                    "cash": -5,
+                    "note": "Se esce dopo, il danno è doppio."
+                }
+            },
+            "dx": {
+                "testo": "Comunicazione trasparente",
+                "effetti": {
+                    "trust": 8,
+                    "utenti": -4,
+                    "churn": 5
+                }
+            },
+            "concept": "Crisis communication and trust"
+        },
+        {
+            "id": "GEN-CRISI-002",
+            "cat": "CRISI",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Indagine antitrust",
+            "scenario": "L'Antitrust apre un'indagine sulle pratiche di lock-in contrattuale. Hai 60 giorni per rispondere.",
+            "sx": {
+                "testo": "Contestazione legale",
+                "effetti": {
+                    "trust": -14,
+                    "cash": -60,
+                    "eco": -5
+                }
+            },
+            "dx": {
+                "testo": "Revisione contratti proattiva",
+                "effetti": {
+                    "trust": 10,
+                    "cash": -30,
+                    "churn": 6,
+                    "eco": 4
+                }
+            },
+            "flags_set": {
+                "dx": [
+                    "regulatory_champion_flag"
+                ]
+            },
+            "concept": "Regulatory compliance and platform power"
+        },
+        {
+            "id": "GEN-CRISI-003",
+            "cat": "CRISI",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Articolo negativo su un media nazionale",
+            "scenario": "Un giornalista ha pubblicato un'inchiesta critica sulle tue pratiche di moderazione. Va viral in 48 ore.",
+            "sx": {
+                "testo": "Silenzio stampa",
+                "effetti": {
+                    "trust": -10,
+                    "utenti": -5,
+                    "note": "L'assenza di risposta amplifica il danno."
+                }
+            },
+            "dx": {
+                "testo": "Risposta pubblica dettagliata",
+                "effetti": {
+                    "trust": 6,
+                    "utenti": -2,
+                    "churn": 4,
+                    "cash": -8
+                }
+            },
+            "concept": "Reputation management"
+        },
+        {
+            "id": "GEN-CRISI-004",
+            "cat": "CRISI",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Indagine EU antitrust — fase avanzata",
+            "scenario": "La Commissione Europea ha approfondito l'indagine. Ora chiede accesso ai dati interni di ranking e moderazione.",
+            "sx": {
+                "testo": "Resisti — avvocati",
+                "effetti": {
+                    "trust": -16,
+                    "cash": -40,
+                    "eco": -5,
+                    "note": "Percorso Regulatory Champion chiuso."
+                }
+            },
+            "dx": {
+                "testo": "Collabori pienamente",
+                "effetti": {
+                    "trust": 12,
+                    "cash": -25,
+                    "eco": 4
+                }
+            },
+            "flags_set": {
+                "dx": [
+                    "regulatory_champion_flag"
+                ]
+            },
+            "concept": "Digital Markets Act compliance"
+        },
+        {
+            "id": "GEN-CRISI-005",
+            "cat": "CRISI",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Il server cade al lancio",
+            "scenario": "Troppo traffico inaspettato. La piattaforma è offline per 6 ore. La stampa tech lo nota.",
+            "sx": {
+                "testo": "Minimizzi pubblicamente",
+                "effetti": {
+                    "trust": -14,
+                    "utenti": -8,
+                    "note": "Se emerge la verità dopo, il danno raddoppia."
+                }
+            },
+            "dx": {
+                "testo": "Comunicazione onesta + scuse",
+                "effetti": {
+                    "trust": 4,
+                    "utenti": -4,
+                    "churn": 6
+                }
+            },
+            "concept": "Trust-building through transparency"
+        },
+        {
+            "id": "GEN-OPP-001",
+            "cat": "OPP",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Primo angel round",
+            "scenario": "Un angel investor offre 200K€ per il 12% equity. Valutazione implicita: 1.67M€.",
+            "sx": {
+                "testo": "Rifiuti — too dilutive",
+                "effetti": {
+                    "note": "Rimani al controllo totale. Runway invariato."
+                }
+            },
+            "dx": {
+                "testo": "Accetti",
+                "effetti": {
+                    "cash": 200,
+                    "trust": 4,
+                    "valore": 8,
+                    "note": "Validazione esterna."
+                }
+            },
+            "concept": "Early-stage financing and dilution"
+        },
+        {
+            "id": "GEN-OPP-002",
+            "cat": "OPP",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Grant pubblico R&S",
+            "scenario": "Un bando ministeriale offre fino a 200K€ non-dilutivi per startup tech innovative. Alta burocrazia.",
+            "sx": {
+                "testo": "Troppa burocrazia — skip",
+                "effetti": {
+                    "note": "Risparmia 3 turni di effort."
+                }
+            },
+            "dx": {
+                "testo": "Fai domanda",
+                "effetti": {
+                    "cash": 200,
+                    "trust": 5,
+                    "valore": 10,
+                    "note": "3 turni di attesa."
+                }
+            },
+            "concept": "Non-dilutive funding"
+        },
+        {
+            "id": "GEN-OPP-003",
+            "cat": "OPP",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Round VC — Serie A",
+            "scenario": "Un VC offre 3M€ per il 22% equity. Investor Patience si attiva.",
+            "sx": {
+                "testo": "Negozi termini",
+                "effetti": {
+                    "valore": 15,
+                    "note": "Rischio che l'offerta si riduca o cada."
+                }
+            },
+            "dx": {
+                "testo": "Accetti a condizioni standard",
+                "effetti": {
+                    "cash": 3000,
+                    "trust": 6,
+                    "note": "Investor Patience attivata. 36 turni."
+                }
+            },
+            "flags_set": {
+                "dx": [
+                    "investor_patience_active"
+                ]
+            },
+            "concept": "Venture capital and governance"
+        },
+        {
+            "id": "GEN-OPP-004",
+            "cat": "OPP",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Partnership media nazionale",
+            "scenario": "Un grande gruppo editoriale vuole distribuire i tuoi contenuti o servizi. Esclusiva o non-esclusiva?",
+            "sx": {
+                "testo": "Esclusivo",
+                "effetti": {
+                    "cash": 40,
+                    "eco": -5,
+                    "note": "Blocca altri partner per 12 turni."
+                }
+            },
+            "dx": {
+                "testo": "Non-esclusivo",
+                "effetti": {
+                    "cash": 22,
+                    "eco": 8,
+                    "trust": 4,
+                    "churn": 3
+                }
+            },
+            "concept": "Partnership strategy and exclusivity tradeoffs"
+        },
+        {
+            "id": "GEN-OPP-005",
+            "cat": "OPP",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Espansione internazionale",
+            "scenario": "Un growth fund vuole co-finanziare l'espansione in tre mercati europei. Debito o equity?",
+            "sx": {
+                "testo": "Rimani focalizzato — IPO prima",
+                "effetti": {
+                    "note": "IPO più pulita. Nessun debito."
+                }
+            },
+            "dx": {
+                "testo": "Espansione con debito",
+                "effetti": {
+                    "cash": 500,
+                    "utenti": 18,
+                    "note": "Investor Patience -8. Debito da restituire post-IPO."
+                }
+            },
+            "concept": "International expansion timing"
+        },
+        {
+            "id": "GEN-OPP-006",
+            "cat": "OPP",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": true,
+            "nome": "IPO — finestra di mercato",
+            "scenario": "Le condizioni sono raggiunte. Il mercato è favorevole. La finestra IPO si apre.",
+            "sx": {
+                "testo": "Rimandi di un trimestre",
+                "effetti": {
+                    "valore": -15,
+                    "note": "La finestra può chiudersi."
+                }
+            },
+            "dx": {
+                "testo": "IPO adesso",
+                "effetti": {
+                    "note": "Valutazione finale calcolata sui multipli verticale-specifici."
+                }
+            },
+            "concept": "IPO timing and market windows"
+        },
+        {
+            "id": "GEN-OPP-007",
+            "cat": "OPP",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Acceleratore startup",
+            "scenario": "Sei stato selezionato per un programma di accelerazione top. 80K€ per il 6% e 4 mesi di mentorship.",
+            "sx": {
+                "testo": "Rifiuti — troppa diluizione",
+                "effetti": {
+                    "note": "Nessun vantaggio ma equity intatta."
+                }
+            },
+            "dx": {
+                "testo": "Accetti",
+                "effetti": {
+                    "cash": 80,
+                    "trust": 6,
+                    "churn": 5,
+                    "valore": 8
+                }
+            },
+            "concept": "Accelerator value proposition"
+        },
+        {
+            "id": "GEN-ETICO-001",
+            "cat": "ETICO",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Dark pattern nell'onboarding",
+            "scenario": "Un dark pattern nel flusso di registrazione porta il 15% degli utenti ad attivare un abbonamento premium senza volerlo. I ricavi salgono.",
+            "sx": {
+                "testo": "Mantieni il flusso",
+                "effetti": {
+                    "cash": 20,
+                    "trust": -18,
+                    "note": "Violazione potenziale Consumer Rights Directive."
+                }
+            },
+            "dx": {
+                "testo": "Redesign con opt-in esplicito",
+                "effetti": {
+                    "cash": 8,
+                    "trust": 16,
+                    "churn": 8,
+                    "eco": 6
+                }
+            },
+            "flags_set": {
+                "dx": [
+                    "regulatory_champion_flag"
+                ]
+            },
+            "concept": "Dark patterns and digital ethics (Brignull, 2010)"
+        },
+        {
+            "id": "GEN-ETICO-002",
+            "cat": "ETICO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Dati utenti per training AI",
+            "scenario": "Il tuo modello AI migliorerebbe enormemente usando i dati comportamentali degli utenti. Hai permesso contrattuale ma non consenso esplicito.",
+            "sx": {
+                "testo": "Usi i dati senza chiedere",
+                "effetti": {
+                    "trust": -18,
+                    "note": "Flag violazione GDPR. Rischio multa."
+                }
+            },
+            "dx": {
+                "testo": "Chiedi consenso esplicito",
+                "effetti": {
+                    "trust": 14,
+                    "churn": 10,
+                    "cash": -5,
+                    "note": "Solo il 65% accetta ma la fiducia cresce."
+                }
+            },
+            "concept": "Data ethics and GDPR (EU Regulation 2016/679)"
+        },
+        {
+            "id": "GEN-ETICO-003",
+            "cat": "ETICO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "AI con bias non intenzionale",
+            "scenario": "Il tuo algoritmo di raccomandazione performa peggio del 20% su utenti di alcune aree geografiche. È legale ma distorto.",
+            "sx": {
+                "testo": "Non comunichi il bias",
+                "effetti": {
+                    "trust": -14,
+                    "note": "Se esce, crisi reputazionale."
+                }
+            },
+            "dx": {
+                "testo": "Pubblichi il limite e lavori al fix",
+                "effetti": {
+                    "trust": 12,
+                    "cash": -20,
+                    "churn": 8
+                }
+            },
+            "concept": "Algorithmic fairness and accountability"
+        },
+        {
+            "id": "GEN-ETICO-004",
+            "cat": "ETICO",
+            "tag": "GEN",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Dati di test non anonimizzati",
+            "scenario": "Hai usato profili utenti reali nei test interni. Nessuno lo sa ancora, ma è una potenziale violazione GDPR.",
+            "sx": {
+                "testo": "Lasci perdere — nessuno lo saprà",
+                "effetti": {
+                    "trust": -8,
+                    "note": "Flag rischio regolatorio latente."
+                }
+            },
+            "dx": {
+                "testo": "Anonimizzi e documenti il processo",
+                "effetti": {
+                    "cash": -10,
+                    "trust": 10,
+                    "churn": 4
+                }
+            },
+            "concept": "Privacy by design (GDPR Art. 25)"
+        },
+        {
+            "id": "GEN-ETICO-005",
+            "cat": "ETICO",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Segnalazione interna di irregolarità",
+            "scenario": "Un dipendente ha segnalato internamente una potenziale violazione nelle pratiche di vendita. Escali o gestisci internamente?",
+            "sx": {
+                "testo": "Gestisci internamente — nessuna escalation",
+                "effetti": {
+                    "trust": -10,
+                    "churn": 4,
+                    "note": "Rischio leak futuro."
+                }
+            },
+            "dx": {
+                "testo": "Procedura formale + fix immediato",
+                "effetti": {
+                    "trust": 14,
+                    "cash": -20,
+                    "churn": 10
+                }
+            },
+            "concept": "Corporate whistleblowing and compliance"
+        },
+        {
+            "id": "GEN-ETICO-006",
+            "cat": "ETICO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Moderazione vs libertà di espressione",
+            "scenario": "Un contenuto borderline sta generando engagement altissimo. Moderarlo significa perdere reach, lasciarlo significa rischiare la reputazione.",
+            "sx": {
+                "testo": "Lasci il contenuto",
+                "effetti": {
+                    "utenti": 8,
+                    "trust": -10,
+                    "note": "Pattern pericoloso se si ripete."
+                }
+            },
+            "dx": {
+                "testo": "Moderi con policy chiara",
+                "effetti": {
+                    "trust": 10,
+                    "utenti": -4,
+                    "churn": 5,
+                    "eco": 3
+                }
+            },
+            "concept": "Content moderation and platform responsibility"
+        },
+        {
+            "id": "GEN-ETICO-007",
+            "cat": "ETICO",
+            "tag": "GEN",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Dati aggregati come prodotto secondario",
+            "scenario": "Potresti vendere dati aggregati e anonimizzati a un data broker. I contratti non lo vietano esplicitamente.",
+            "sx": {
+                "testo": "Vendi i dati",
+                "effetti": {
+                    "cash": 40,
+                    "trust": -20,
+                    "note": "Se i clienti scoprono, churn massivo."
+                }
+            },
+            "dx": {
+                "testo": "Rifiuti — non è il tuo modello",
+                "effetti": {
+                    "trust": 12,
+                    "churn": 10,
+                    "valore": 8
+                }
+            },
+            "concept": "Data monetization ethics"
+        },
+        {
+            "id": "GEN-ETICO-008",
+            "cat": "ETICO",
+            "tag": "GEN",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Addebiti nascosti",
+            "scenario": "Una funzione premium viene attivata automaticamente dopo il trial senza un reminder chiaro. Il 10% degli utenti non se ne accorge.",
+            "sx": {
+                "testo": "Mantieni il meccanismo",
+                "effetti": {
+                    "cash": 15,
+                    "trust": -16,
+                    "note": "Violazione potenziale Consumer Rights Directive."
+                }
+            },
+            "dx": {
+                "testo": "Notifica attiva pre-addebito",
+                "effetti": {
+                    "cash": 8,
+                    "trust": 14,
+                    "churn": 8
+                }
+            },
+            "concept": "Consumer protection and digital ethics"
+        },
+        {
+            "id": "S-TEAM-001",
+            "cat": "TEAM",
+            "tag": "S",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Head of Community",
+            "scenario": "La moderazione manuale è costosa ma costruisce fiducia. L'algoritmo scala ma è meno preciso sulla cultura della community.",
+            "sx": {
+                "testo": "Solo algoritmo",
+                "effetti": {
+                    "cash": -2,
+                    "utenti": 2,
+                    "trust": -5,
+                    "note": "Scala bene ma qualità community cala."
+                }
+            },
+            "dx": {
+                "testo": "Head of Community dedicato",
+                "effetti": {
+                    "cash": -14,
+                    "trust": 10,
+                    "churn": 8,
+                    "eco": 4
+                }
+            },
+            "concept": "Platform governance and community management"
+        },
+        {
+            "id": "S-TEAM-002",
+            "cat": "TEAM",
+            "tag": "S",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Trust & Safety team",
+            "scenario": "I casi di abuso e harassment aumentano con la crescita. Serve un team dedicato o è sufficiente l'algoritmo?",
+            "sx": {
+                "testo": "Solo tool automatici",
+                "effetti": {
+                    "cash": -5,
+                    "trust": -8,
+                    "eco": -3
+                }
+            },
+            "dx": {
+                "testo": "Trust & Safety team (5 persone)",
+                "effetti": {
+                    "cash": -30,
+                    "trust": 14,
+                    "churn": 6,
+                    "eco": 5
+                }
+            },
+            "concept": "Content moderation at scale"
+        },
+        {
+            "id": "S-TEAM-003",
+            "cat": "TEAM",
+            "tag": "S",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Creator Partner Manager",
+            "scenario": "I creator top chiedono un referente dedicato. Senza di lui, i migliori migrano verso piattaforme che li trattano da partner.",
+            "sx": {
+                "testo": "Non assumi — scala con il tool",
+                "effetti": {
+                    "eco": -10,
+                    "churn": -5,
+                    "utenti": -4
+                }
+            },
+            "dx": {
+                "testo": "Creator Partner Manager",
+                "effetti": {
+                    "cash": -16,
+                    "eco": 12,
+                    "churn": 8,
+                    "utenti": 6
+                }
+            },
+            "concept": "Complementor relationship management"
+        },
+        {
+            "id": "S-ECO-001",
+            "cat": "ECO",
+            "tag": "S",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Creator in cerca di casa",
+            "scenario": "Cinque creator con 200K follower ciascuno vogliono lasciare una piattaforma rivale. Condizioni speciali o standard?",
+            "sx": {
+                "testo": "Condizioni standard",
+                "effetti": {
+                    "utenti": 5,
+                    "churn": 3
+                }
+            },
+            "dx": {
+                "testo": "Condizioni speciali",
+                "effetti": {
+                    "utenti": 14,
+                    "churn": 9,
+                    "cash": -18,
+                    "eco": 5
+                }
+            },
+            "concept": "Complementor seeding (Parker & Van Alstyne, 2016)"
+        },
+        {
+            "id": "S-ECO-002",
+            "cat": "ECO",
+            "tag": "S",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Commissioni creator",
+            "scenario": "I creator chiedono di alzare la loro quota dal 30% al 40% dei ricavi generati. Minacciano di migrare.",
+            "sx": {
+                "testo": "Mantieni il 30%",
+                "effetti": {
+                    "eco": -12,
+                    "note": "Qualche creator migra al competitor."
+                }
+            },
+            "dx": {
+                "testo": "Alzi al 40%",
+                "effetti": {
+                    "eco": 14,
+                    "cash": -20,
+                    "churn": 7,
+                    "valore": -15
+                }
+            },
+            "concept": "Value sharing in platform ecosystems"
+        },
+        {
+            "id": "S-ECO-003",
+            "cat": "ECO",
+            "tag": "S",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Developer program aggressivo",
+            "scenario": "Il competitor ha lanciato un developer program che offre il 20% di revenue share. Rispondi?",
+            "sx": {
+                "testo": "Non reagisci subito",
+                "effetti": {
+                    "eco": -6,
+                    "note": "Qualche developer guarda dall'altra parte."
+                }
+            },
+            "dx": {
+                "testo": "Developer program immediato",
+                "effetti": {
+                    "eco": 12,
+                    "cash": -25,
+                    "trust": 4
+                }
+            },
+            "concept": "Competitive ecosystem dynamics"
+        },
+        {
+            "id": "S-ECO-004",
+            "cat": "ECO",
+            "tag": "S",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Accordo esclusivo con creator top",
+            "scenario": "Il creator più seguito sulla tua piattaforma chiede un accordo di esclusività in cambio di compenso garantito.",
+            "sx": {
+                "testo": "Esclusiva — blocchi il competitor",
+                "effetti": {
+                    "eco": -8,
+                    "churn": 10,
+                    "cash": -60,
+                    "note": "Gli altri creator vedono un trattamento differenziato."
+                }
+            },
+            "dx": {
+                "testo": "Non-esclusiva — ecosystem aperto",
+                "effetti": {
+                    "eco": 8,
+                    "trust": 6,
+                    "cash": -30,
+                    "churn": 5
+                }
+            },
+            "concept": "Exclusivity and ecosystem fairness"
+        },
+        {
+            "id": "S-COMP-001",
+            "cat": "COMP",
+            "tag": "S",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Competitor Alert — K-factor rivale alto",
+            "scenario": "Il rivale ha un K-factor di 1.4. Sta crescendo organicamente più veloce di te. Risposta?",
+            "sx": {
+                "testo": "Differenziazione sulla qualità",
+                "effetti": {
+                    "trust": 8,
+                    "eco": 6,
+                    "churn": 5
+                }
+            },
+            "dx": {
+                "testo": "Campagna acquisizione aggressiva",
+                "effetti": {
+                    "utenti": 12,
+                    "cash": -40,
+                    "kfactor": 0.1
+                }
+            },
+            "concept": "Viral growth competition"
+        },
+        {
+            "id": "S-COMP-002",
+            "cat": "COMP",
+            "tag": "S",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Il rivale acquisisce un tool per creator",
+            "scenario": "Il competitor ha comprato la seconda app di editing più usata sulla tua piattaforma. Risposta?",
+            "sx": {
+                "testo": "Costruisci internamente",
+                "effetti": {
+                    "cash": -40,
+                    "eco": 10,
+                    "trust": 5,
+                    "note": "4 turni di sviluppo."
+                }
+            },
+            "dx": {
+                "testo": "Acquisisci anche tu",
+                "effetti": {
+                    "cash": -120,
+                    "eco": 6,
+                    "valore": 20,
+                    "note": "Integrazione rischiosa."
+                }
+            },
+            "concept": "Vertical integration in platform competition"
+        },
+        {
+            "id": "S-COMP-003",
+            "cat": "COMP",
+            "tag": "S",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Il rivale entra nel tuo mercato principale",
+            "scenario": "Il competitor ha appena lanciato esattamente il tuo prodotto con 10× le risorse. Sei ancora rilevante?",
+            "sx": {
+                "testo": "Differenziazione community",
+                "effetti": {
+                    "eco": 6,
+                    "trust": 8,
+                    "utenti": 5,
+                    "churn": 4
+                }
+            },
+            "dx": {
+                "testo": "Pivoti verso nicchia verticale",
+                "effetti": {
+                    "cash": -30,
+                    "churn": -5,
+                    "utenti": -8,
+                    "eco": 8
+                }
+            },
+            "concept": "Competitive response and niche strategy"
+        },
+        {
+            "id": "S-CRISI-001",
+            "cat": "CRISI",
+            "tag": "S",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Campagna di disinformazione",
+            "scenario": "Una campagna coordinata usa la piattaforma per diffondere fake news a tre settimane dalle elezioni.",
+            "sx": {
+                "testo": "Solo i casi evidenti",
+                "effetti": {
+                    "trust": -10,
+                    "utenti": 0,
+                    "eco": -5,
+                    "note": "Stampa critica. Pressione regolatoria."
+                }
+            },
+            "dx": {
+                "testo": "Rimozione massiva con policy pubblica",
+                "effetti": {
+                    "trust": 14,
+                    "utenti": -10,
+                    "eco": -6
+                }
+            },
+            "flags_set": {
+                "dx": [
+                    "regulatory_champion_flag"
+                ]
+            },
+            "concept": "Content moderation and electoral integrity"
+        },
+        {
+            "id": "S-CRISI-002",
+            "cat": "CRISI",
+            "tag": "S",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Content creator accusato di molestie",
+            "scenario": "Il creator con più follower sulla tua piattaforma è accusato di molestie da tre utenti. Sospendi o aspetti le prove?",
+            "sx": {
+                "testo": "Aspetti le prove",
+                "effetti": {
+                    "trust": -12,
+                    "utenti": -5,
+                    "note": "La community femminile abbandona."
+                }
+            },
+            "dx": {
+                "testo": "Sospensione immediata con comunicazione",
+                "effetti": {
+                    "trust": 10,
+                    "utenti": -3,
+                    "eco": -6,
+                    "churn": 4
+                }
+            },
+            "concept": "Platform responsibility and community safety"
+        },
+        {
+            "id": "S-CRISI-003",
+            "cat": "CRISI",
+            "tag": "S",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Advertiser boycott",
+            "scenario": "Venti brand hanno sospeso la pubblicità sulla piattaforma per la presenza di contenuti tossici vicino ai loro ads.",
+            "sx": {
+                "testo": "Tratti privatamente con ogni brand",
+                "effetti": {
+                    "cash": -30,
+                    "trust": -8,
+                    "eco": -4
+                }
+            },
+            "dx": {
+                "testo": "Brand safety framework pubblico",
+                "effetti": {
+                    "cash": -15,
+                    "trust": 12,
+                    "eco": 6,
+                    "valore": 10
+                }
+            },
+            "concept": "Advertiser relations and brand safety"
+        },
+        {
+            "id": "S-OPP-001",
+            "cat": "OPP",
+            "tag": "S",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Un creator virale ti nota",
+            "scenario": "Un creator con 800K follower posta sulla tua piattaforma per scommessa. Hai 48 ore di visibilità straordinaria.",
+            "sx": {
+                "testo": "Non fai nulla di speciale",
+                "effetti": {
+                    "utenti": 18,
+                    "eco": 5,
+                    "churn": 3
+                }
+            },
+            "dx": {
+                "testo": "Contatti e offri condizioni speciali",
+                "effetti": {
+                    "utenti": 35,
+                    "eco": 12,
+                    "cash": -25,
+                    "churn": 8
+                }
+            },
+            "concept": "Seeding and viral acquisition"
+        },
+        {
+            "id": "S-OPP-002",
+            "cat": "OPP",
+            "tag": "S",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Strumento di monetizzazione per creator",
+            "scenario": "Lanci uno strumento che permette ai creator di monetizzare direttamente i loro contenuti. Aumenta il loro attaccamento alla piattaforma.",
+            "sx": {
+                "testo": "Feature base gratuita",
+                "effetti": {
+                    "eco": 10,
+                    "churn": 6,
+                    "utenti": 5,
+                    "cash": -20
+                }
+            },
+            "dx": {
+                "testo": "Suite premium a commissione",
+                "effetti": {
+                    "eco": 16,
+                    "churn": 10,
+                    "cash": 15,
+                    "utenti": 8
+                }
+            },
+            "concept": "Creator economy and platform monetization"
+        },
+        {
+            "id": "S-OPP-003",
+            "cat": "OPP",
+            "tag": "S",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Espansione in tre mercati UE",
+            "scenario": "Un growth fund vuole co-finanziare l'espansione in Germania, Francia e Polonia. La localizzazione è complessa.",
+            "sx": {
+                "testo": "Rimani focalizzato — IPO prima",
+                "effetti": {
+                    "note": "IPO più pulita. Nessuna distrazione."
+                }
+            },
+            "dx": {
+                "testo": "Espansione — mercati grandi",
+                "effetti": {
+                    "cash": 500,
+                    "utenti": 18,
+                    "eco": 8,
+                    "note": "Investor Patience -8."
+                }
+            },
+            "concept": "Geographic expansion timing"
+        },
+        {
+            "id": "S-ETICO-001",
+            "cat": "ETICO",
+            "tag": "S",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "L'algoritmo amplifica l'outrage",
+            "scenario": "I contenuti divisivi generano 3× l'engagement medio. I ricavi ads crescono, la community si polarizza. Hai i dati interni.",
+            "sx": {
+                "testo": "Lasci correre",
+                "effetti": {
+                    "cash": 8,
+                    "trust": -14,
+                    "utenti": 10,
+                    "note": "Pattern pericoloso se si ripete."
+                }
+            },
+            "dx": {
+                "testo": "Depotenzi i contenuti divisivi",
+                "effetti": {
+                    "cash": -4,
+                    "trust": 12,
+                    "churn": 6,
+                    "utenti": -7
+                }
+            },
+            "concept": "Algorithmic amplification and societal harm (Gawer, 2022)"
+        },
+        {
+            "id": "S-ETICO-002",
+            "cat": "ETICO",
+            "tag": "S",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Utenti minorenni non verificati",
+            "scenario": "Il 13% degli utenti ha meno di 13 anni. Verificarli significa perderli. Chiudere un occhio è una violazione.",
+            "sx": {
+                "testo": "Chiudi un occhio",
+                "effetti": {
+                    "utenti": 0,
+                    "trust": -16,
+                    "note": "Flag violazione COPPA/GDPR minori."
+                }
+            },
+            "dx": {
+                "testo": "Verifica e rimuovi",
+                "effetti": {
+                    "utenti": -13,
+                    "trust": 18,
+                    "churn": 4
+                }
+            },
+            "flags_set": {
+                "dx": [
+                    "regulatory_champion_flag"
+                ]
+            },
+            "concept": "Child protection in digital platforms"
+        },
+        {
+            "id": "B-TEAM-001",
+            "cat": "TEAM",
+            "tag": "B",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Customer Success o Product?",
+            "scenario": "Con 3 clienti enterprise, serve qualcuno che li tenga soddisfatti. Ma il prodotto ha ancora gap critici.",
+            "sx": {
+                "testo": "Head of Product",
+                "effetti": {
+                    "cash": -16,
+                    "utenti": 5,
+                    "churn": 4
+                }
+            },
+            "dx": {
+                "testo": "Head of Customer Success",
+                "effetti": {
+                    "cash": -14,
+                    "churn": 10,
+                    "utenti": 3
+                }
+            },
+            "concept": "B2B customer retention vs product development"
+        },
+        {
+            "id": "B-TEAM-002",
+            "cat": "TEAM",
+            "tag": "B",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Enterprise sales — struttura",
+            "scenario": "Il team sales è cresciuto a 5 persone ma senza struttura. Introduci un processo formale di CRM e pipeline review?",
+            "sx": {
+                "testo": "Gestione informale — libertà ai sales",
+                "effetti": {
+                    "utenti": 5,
+                    "churn": -3,
+                    "note": "Rischio perdita deal in pipeline."
+                }
+            },
+            "dx": {
+                "testo": "CRM + processo formale",
+                "effetti": {
+                    "cash": -15,
+                    "utenti": 10,
+                    "churn": 8,
+                    "valore": 12
+                }
+            },
+            "concept": "Sales operations and scaling"
+        },
+        {
+            "id": "B-TEAM-003",
+            "cat": "TEAM",
+            "tag": "B",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Chief Revenue Officer pre-IPO",
+            "scenario": "Il board vuole un CRO con track record enterprise prima dell'IPO. Costa molto ma segnala maturità commerciale.",
+            "sx": {
+                "testo": "Non assumi — CEO gestisce",
+                "effetti": {
+                    "trust": -6,
+                    "valore": -10
+                }
+            },
+            "dx": {
+                "testo": "CRO senior da competitor",
+                "effetti": {
+                    "cash": -35,
+                    "trust": 12,
+                    "valore": 20,
+                    "utenti": 8
+                }
+            },
+            "concept": "Executive talent and IPO readiness"
+        },
+        {
+            "id": "B-ECO-001",
+            "cat": "ECO",
+            "tag": "B",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "System integrator come partner",
+            "scenario": "Il più grande system integrator locale vuole diventare rivenditore. Chiede l'esclusiva per il segmento SMB.",
+            "sx": {
+                "testo": "Non-esclusivo",
+                "effetti": {
+                    "eco": 8,
+                    "cash": 0,
+                    "note": "Canale più lento ma non vincolato."
+                }
+            },
+            "dx": {
+                "testo": "Esclusiva 18 mesi",
+                "effetti": {
+                    "eco": 16,
+                    "cash": 25,
+                    "churn": 8,
+                    "note": "Dipendenza da un solo canale."
+                }
+            },
+            "concept": "Channel partner strategy (Brandenburger & Nalebuff, 1996)"
+        },
+        {
+            "id": "B-ECO-002",
+            "cat": "ECO",
+            "tag": "B",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "API enterprise aperte",
+            "scenario": "I clienti chiedono API per integrare il tuo SaaS nei loro ERP e workflow. Svilupparle costa 3 mesi.",
+            "sx": {
+                "testo": "Non ora — troppo presto",
+                "effetti": {
+                    "eco": -8,
+                    "churn": -5,
+                    "note": "Clienti frustrati. Churn risk."
+                }
+            },
+            "dx": {
+                "testo": "API con sandbox gratuita",
+                "effetti": {
+                    "eco": 16,
+                    "utenti": 5,
+                    "cash": -30,
+                    "trust": 6
+                }
+            },
+            "concept": "Platform openness in B2B contexts"
+        },
+        {
+            "id": "B-ECO-003",
+            "cat": "ECO",
+            "tag": "B",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "System integrator chiede sconto volume",
+            "scenario": "Il partner system integrator controlla il 35% dei tuoi clienti. Vuole il 30% di sconto sui nuovi contratti.",
+            "sx": {
+                "testo": "Rifiuti — margini non reggono",
+                "effetti": {
+                    "eco": -12,
+                    "note": "Partner insoddisfatto. Churn indiretto."
+                }
+            },
+            "dx": {
+                "testo": "Sconto con cap volumetrico",
+                "effetti": {
+                    "eco": 8,
+                    "cash": 25,
+                    "churn": 5,
+                    "note": "Margini ridotti ma canale attivo."
+                }
+            },
+            "concept": "Channel conflict and partner power"
+        },
+        {
+            "id": "B-ECO-004",
+            "cat": "ECO",
+            "tag": "B",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Partnership Big4 consulting",
+            "scenario": "Deloitte vuole includere il tuo SaaS nel loro stack di consulenza digitale. Chiedono l'esclusiva per 2 anni.",
+            "sx": {
+                "testo": "Non-esclusiva",
+                "effetti": {
+                    "eco": 8,
+                    "cash": 20,
+                    "note": "Apertura ad altri partner."
+                }
+            },
+            "dx": {
+                "testo": "Esclusiva 2 anni",
+                "effetti": {
+                    "eco": 20,
+                    "cash": 60,
+                    "churn": 10,
+                    "note": "Dipendenza forte da Deloitte."
+                }
+            },
+            "concept": "Strategic partnership and exclusivity"
+        },
+        {
+            "id": "B-COMP-001",
+            "cat": "COMP",
+            "tag": "B",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Competitor Alert — incumbent si sveglia",
+            "scenario": "Salesforce ha lanciato una feature che copre il 60% del tuo caso d'uso principale.",
+            "sx": {
+                "testo": "Nicchia verticale — differenziazione profonda",
+                "effetti": {
+                    "eco": 6,
+                    "trust": 5,
+                    "utenti": -4
+                }
+            },
+            "dx": {
+                "testo": "Acceleri il roadmap",
+                "effetti": {
+                    "cash": -40,
+                    "utenti": 4,
+                    "churn": -5
+                }
+            },
+            "concept": "Incumbent response and niche positioning"
+        },
+        {
+            "id": "B-COMP-002",
+            "cat": "COMP",
+            "tag": "B",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Il competitor abbassa i prezzi del 30%",
+            "scenario": "La startup competitor ha tagliato i prezzi per acquisire quota. Due tuoi clienti chiedono parità.",
+            "sx": {
+                "testo": "Non scendi — difendi i margini",
+                "effetti": {
+                    "utenti": -8,
+                    "churn": 6,
+                    "cash": 0
+                }
+            },
+            "dx": {
+                "testo": "Scendi per i clienti esistenti",
+                "effetti": {
+                    "utenti": 0,
+                    "cash": -20,
+                    "churn": 4
+                }
+            },
+            "concept": "Price competition and margin defense"
+        },
+        {
+            "id": "B-COMP-003",
+            "cat": "COMP",
+            "tag": "B",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Acquisizione da parte di un big player",
+            "scenario": "Salesforce offre €280M. È sopra il valore di IPO stimato. Strategic Exit di lusso.",
+            "sx": {
+                "testo": "Rifiuti — vuoi l'IPO",
+                "effetti": {
+                    "valore": 25,
+                    "note": "Investor Patience -15. Il mercato legge forza."
+                }
+            },
+            "dx": {
+                "testo": "Accetti",
+                "effetti": {
+                    "note": "Ending: Strategic Exit — Big Tech."
+                }
+            },
+            "concept": "Exit strategy and strategic acquirers"
+        },
+        {
+            "id": "B-CRISI-001",
+            "cat": "CRISI",
+            "tag": "B",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Audit di sicurezza del primo cliente",
+            "scenario": "Il primo enterprise client chiede un penetration test prima di firmare. Non hai mai fatto security audit formale.",
+            "sx": {
+                "testo": "Rimandi — non sei pronto",
+                "effetti": {
+                    "trust": -5,
+                    "note": "Perdi il cliente."
+                }
+            },
+            "dx": {
+                "testo": "Consulente sicurezza esterno",
+                "effetti": {
+                    "cash": -35,
+                    "trust": 14,
+                    "churn": 8,
+                    "note": "Cliente firma."
+                }
+            },
+            "concept": "Enterprise security requirements"
+        },
+        {
+            "id": "B-CRISI-002",
+            "cat": "CRISI",
+            "tag": "B",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Data breach — clienti enterprise",
+            "scenario": "Un breach espone dati di tre clienti enterprise. GDPR notification obbligatoria entro 72 ore.",
+            "sx": {
+                "testo": "Notifica minimale",
+                "effetti": {
+                    "trust": -18,
+                    "cash": -20,
+                    "churn": -8
+                }
+            },
+            "dx": {
+                "testo": "Notifica completa + task force",
+                "effetti": {
+                    "trust": 8,
+                    "cash": -50,
+                    "churn": 6
+                }
+            },
+            "concept": "GDPR breach notification (Art. 33)"
+        },
+        {
+            "id": "B-CRISI-003",
+            "cat": "CRISI",
+            "tag": "B",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Churn del cliente più grande",
+            "scenario": "Il cliente che vale il 40% del tuo MRR non rinnova. Motivo: UI troppo complessa per il loro team.",
+            "sx": {
+                "testo": "Accetti il churn e pivoti",
+                "effetti": {
+                    "cash": -40,
+                    "churn": -5,
+                    "note": "Sopravvivenza a rischio."
+                }
+            },
+            "dx": {
+                "testo": "Win-back: redesign UI dedicato",
+                "effetti": {
+                    "cash": -25,
+                    "churn": 6,
+                    "utenti": 4,
+                    "note": "3 turni di lavoro."
+                }
+            },
+            "concept": "Enterprise churn and win-back strategy"
+        },
+        {
+            "id": "B-OPP-001",
+            "cat": "OPP",
+            "tag": "B",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Fortune 500 come primo cliente",
+            "scenario": "Un ex contatto ti offre di essere il primo cliente Fortune 500. Sconto 40% e customizzazioni significative.",
+            "sx": {
+                "testo": "Rifiuti le customizzazioni",
+                "effetti": {
+                    "churn": 4,
+                    "cash": 20,
+                    "note": "Prodotto scalabile ma cliente più piccolo."
+                }
+            },
+            "dx": {
+                "testo": "Accetti tutto",
+                "effetti": {
+                    "cash": 45,
+                    "churn": -6,
+                    "valore": 30,
+                    "note": "Cliente logo ma debito tecnico alto."
+                }
+            },
+            "concept": "Anchor client strategy and product focus"
+        },
+        {
+            "id": "B-OPP-002",
+            "cat": "OPP",
+            "tag": "B",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Microsoft Azure Marketplace",
+            "scenario": "Azure Marketplace ti offre distribuzione a 50.000 clienti potenziali. Revenue share del 20%.",
+            "sx": {
+                "testo": "Rifiuti — margini troppo bassi",
+                "effetti": {
+                    "eco": 2
+                }
+            },
+            "dx": {
+                "testo": "Accetti",
+                "effetti": {
+                    "eco": 18,
+                    "utenti": 15,
+                    "cash": 35,
+                    "valore": 25
+                }
+            },
+            "concept": "Distribution through platform marketplaces"
+        },
+        {
+            "id": "B-OPP-003",
+            "cat": "OPP",
+            "tag": "B",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Espansione DACH con partner locale",
+            "scenario": "Un reseller tedesco chiede l'esclusiva per Germania, Austria e Svizzera per 3 anni.",
+            "sx": {
+                "testo": "Non-esclusiva",
+                "effetti": {
+                    "cash": 20,
+                    "eco": 5,
+                    "note": "Flessibilità futura."
+                }
+            },
+            "dx": {
+                "testo": "Esclusiva 3 anni DACH",
+                "effetti": {
+                    "cash": 55,
+                    "eco": 12,
+                    "churn": 8,
+                    "valore": 30
+                }
+            },
+            "concept": "International channel strategy"
+        },
+        {
+            "id": "B-ETICO-001",
+            "cat": "ETICO",
+            "tag": "B",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Monitoraggio dipendenti del cliente",
+            "scenario": "Un cliente vuole usare il tuo SaaS per monitorare la produttività dei propri dipendenti a loro insaputa. È nel contratto.",
+            "sx": {
+                "testo": "Permetti — è contrattualmente lecito",
+                "effetti": {
+                    "cash": 30,
+                    "trust": -16,
+                    "note": "Flag etico e GDPR."
+                }
+            },
+            "dx": {
+                "testo": "Clausola di trasparenza obbligatoria",
+                "effetti": {
+                    "cash": 18,
+                    "trust": 10,
+                    "churn": 6
+                }
+            },
+            "concept": "Workplace surveillance ethics"
+        },
+        {
+            "id": "B-ETICO-002",
+            "cat": "ETICO",
+            "tag": "B",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Dati aggregati clienti per benchmark",
+            "scenario": "Potresti vendere benchmark di settore usando dati aggregati dei clienti. I contratti non lo vietano esplicitamente.",
+            "sx": {
+                "testo": "Lanci il prodotto benchmark",
+                "effetti": {
+                    "cash": 40,
+                    "trust": -20,
+                    "note": "Se i clienti scoprono, churn massivo."
+                }
+            },
+            "dx": {
+                "testo": "Chiedi consenso esplicito prima",
+                "effetti": {
+                    "trust": 12,
+                    "churn": 8,
+                    "cash": 20,
+                    "note": "Solo il 60% accetta ma il trust cresce."
+                }
+            },
+            "concept": "B2B data ethics and secondary use"
+        },
+        {
+            "id": "F-TEAM-001",
+            "cat": "TEAM",
+            "tag": "F",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "CTO o compliance officer — prima assunzione",
+            "scenario": "In Fintech la compliance non è opzionale. Ma senza un CTO solido il prodotto non scala. Scegli una sola priorità.",
+            "sx": {
+                "testo": "CTO prima",
+                "effetti": {
+                    "cash": -16,
+                    "churn": 10,
+                    "utenti": 4,
+                    "trust": -6
+                }
+            },
+            "dx": {
+                "testo": "Compliance Officer prima",
+                "effetti": {
+                    "cash": -14,
+                    "trust": 12,
+                    "churn": 6,
+                    "utenti": 2
+                }
+            },
+            "concept": "Regulatory compliance vs product velocity in Fintech"
+        },
+        {
+            "id": "F-TEAM-002",
+            "cat": "TEAM",
+            "tag": "F",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Head of Risk — necessario?",
+            "scenario": "Il regolatore sta guardando più da vicino. Un Head of Risk dedicato è costoso ma segnala maturità istituzionale.",
+            "sx": {
+                "testo": "Non ora — gestisci tu il risk",
+                "effetti": {
+                    "trust": -8,
+                    "cash": 0,
+                    "note": "Vulnerabilità regolatoria."
+                }
+            },
+            "dx": {
+                "testo": "Head of Risk senior",
+                "effetti": {
+                    "cash": -22,
+                    "trust": 14,
+                    "churn": 6,
+                    "valore": 10
+                }
+            },
+            "concept": "Risk management in regulated industries"
+        },
+        {
+            "id": "F-TEAM-003",
+            "cat": "TEAM",
+            "tag": "F",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "DPO e CISO pre-IPO",
+            "scenario": "L'IPO richiede un Data Protection Officer e un Chief Information Security Officer formali. Due assunzioni costose ma obbligatorie.",
+            "sx": {
+                "testo": "Consulenti esterni — più economico",
+                "effetti": {
+                    "cash": -20,
+                    "trust": 8,
+                    "valore": -5
+                }
+            },
+            "dx": {
+                "testo": "Assunzioni interne",
+                "effetti": {
+                    "cash": -45,
+                    "trust": 16,
+                    "churn": 6,
+                    "valore": 15
+                }
+            },
+            "concept": "Fintech regulatory compliance and IPO"
+        },
+        {
+            "id": "F-ECO-001",
+            "cat": "ECO",
+            "tag": "F",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Banca come complementor",
+            "scenario": "Una banca regionale vuole distribuire i tuoi servizi alla sua base clienti. Chiede accesso ai dati utenti come condizione.",
+            "sx": {
+                "testo": "Rifiuti la condizione dati",
+                "effetti": {
+                    "eco": 4,
+                    "trust": 10,
+                    "cash": 8
+                }
+            },
+            "dx": {
+                "testo": "Accetti la condizione dati",
+                "effetti": {
+                    "eco": 18,
+                    "cash": 35,
+                    "trust": -16,
+                    "note": "Flag regolatorio."
+                }
+            },
+            "concept": "Banking partnership and data sharing"
+        },
+        {
+            "id": "F-ECO-002",
+            "cat": "ECO",
+            "tag": "F",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Fintech partner come complementors",
+            "scenario": "Tre fintech complementari (assicurazioni, investimenti, pensioni) vogliono integrarsi sulla tua piattaforma.",
+            "sx": {
+                "testo": "Solo uno — controllo qualità",
+                "effetti": {
+                    "eco": 10,
+                    "trust": 8,
+                    "cash": 15
+                }
+            },
+            "dx": {
+                "testo": "Tutti e tre — ecosistema ricco",
+                "effetti": {
+                    "eco": 22,
+                    "utenti": 10,
+                    "cash": 30,
+                    "trust": -5,
+                    "note": "Complessità governance alta."
+                }
+            },
+            "concept": "Ecosystem composition and governance"
+        },
+        {
+            "id": "F-ECO-003",
+            "cat": "ECO",
+            "tag": "F",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Finestra PSD2 — open banking",
+            "scenario": "Trust ≥ 55. Si apre la finestra PSD2: puoi accedere ai dati di conto di qualsiasi banca UE con il consenso utente.",
+            "sx": {
+                "testo": "Non implementi — troppo complesso",
+                "effetti": {
+                    "eco": -8,
+                    "utenti": -4
+                }
+            },
+            "dx": {
+                "testo": "Implementi subito",
+                "effetti": {
+                    "eco": 16,
+                    "utenti": 14,
+                    "cash": 25,
+                    "trust": 6,
+                    "note": "Window: 5 turni."
+                }
+            },
+            "trigger": "trust >= 55 AND fase >= 2",
+            "concept": "Open Banking and PSD2 (EU Directive 2015/2366)"
+        },
+        {
+            "id": "F-ECO-004",
+            "cat": "ECO",
+            "tag": "F",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Banca tradizionale come competitor-complementor",
+            "scenario": "Una banca tradizionale vuole sia distribuire i tuoi servizi sia sviluppare internamente la stessa feature.",
+            "sx": {
+                "testo": "Rifiuti — troppo ambiguo",
+                "effetti": {
+                    "eco": 2,
+                    "note": "Nessuna relazione."
+                }
+            },
+            "dx": {
+                "testo": "Accetti con clausola non-compete",
+                "effetti": {
+                    "eco": 12,
+                    "cash": 28,
+                    "trust": 6,
+                    "churn": 8
+                }
+            },
+            "concept": "Coopetition in financial services (Brandenburger & Nalebuff, 1996)"
+        },
+        {
+            "id": "F-COMP-001",
+            "cat": "COMP",
+            "tag": "F",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Competitor Alert — neobank entra nel tuo segmento",
+            "scenario": "Una neobank con 8M utenti ha appena lanciato un prodotto identico al tuo per il segmento giovani.",
+            "sx": {
+                "testo": "Ultra-nicchia — target diverso",
+                "effetti": {
+                    "eco": 8,
+                    "trust": 6,
+                    "utenti": -5,
+                    "note": "Segmento meno conteso."
+                }
+            },
+            "dx": {
+                "testo": "Battaglia frontale — differenziazione UX",
+                "effetti": {
+                    "cash": -30,
+                    "utenti": 6,
+                    "churn": -4
+                }
+            },
+            "concept": "Neobank competition and niche strategy"
+        },
+        {
+            "id": "F-COMP-002",
+            "cat": "COMP",
+            "tag": "F",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Multi-homing — portabilità obbligatoria PSD2",
+            "scenario": "La PSD2 impone la portabilità dei dati. Non puoi fare lock-in legale. Come costruisci vantaggio competitivo?",
+            "sx": {
+                "testo": "Switching costs esperienziali",
+                "effetti": {
+                    "churn": 10,
+                    "trust": 4,
+                    "utenti": 3,
+                    "cash": -15
+                }
+            },
+            "dx": {
+                "testo": "Open Banking totale — vinci sul servizio",
+                "effetti": {
+                    "trust": 12,
+                    "utenti": 6,
+                    "churn": -4,
+                    "eco": 8
+                }
+            },
+            "concept": "Regulatory-forced multi-homing"
+        },
+        {
+            "id": "F-COMP-003",
+            "cat": "COMP",
+            "tag": "F",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Il competitor ottiene licenza bancaria",
+            "scenario": "La neobank competitor ha ottenuto la licenza bancaria completa. Può offrire prodotti che tu non puoi ancora.",
+            "sx": {
+                "testo": "Acceleri la domanda di licenza",
+                "effetti": {
+                    "cash": -40,
+                    "trust": 8,
+                    "note": "18 mesi di attesa."
+                }
+            },
+            "dx": {
+                "testo": "Partnership con banca licenziataria",
+                "effetti": {
+                    "eco": 10,
+                    "cash": 20,
+                    "churn": 6,
+                    "trust": 5
+                }
+            },
+            "concept": "Regulatory arbitrage and licensing strategy"
+        },
+        {
+            "id": "F-CRISI-001",
+            "cat": "CRISI",
+            "tag": "F",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Ispezione Banca d'Italia",
+            "scenario": "La Banca d'Italia annuncia un'ispezione ordinaria. Hai 2 settimane per preparare la documentazione.",
+            "sx": {
+                "testo": "Documentazione minimale",
+                "effetti": {
+                    "trust": -14,
+                    "cash": -10,
+                    "note": "Ispezione con esito incerto."
+                }
+            },
+            "dx": {
+                "testo": "Task force + consulente regolatorio",
+                "effetti": {
+                    "trust": 10,
+                    "cash": -40,
+                    "churn": 8
+                }
+            },
+            "concept": "Financial regulatory inspection"
+        },
+        {
+            "id": "F-CRISI-002",
+            "cat": "CRISI",
+            "tag": "F",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Frode sistemica degli utenti",
+            "scenario": "Un pattern di frode coordinata usa la piattaforma per micro-riciclaggio. Il regolatore ha notato pattern anomali.",
+            "sx": {
+                "testo": "Blocchi gli account sospetti senza notifica",
+                "effetti": {
+                    "trust": -8,
+                    "churn": -5,
+                    "note": "Utenti legittimi bloccati erroneamente."
+                }
+            },
+            "dx": {
+                "testo": "Notifica autorità + blocco selettivo",
+                "effetti": {
+                    "trust": 14,
+                    "utenti": -8,
+                    "cash": -20,
+                    "churn": 8
+                }
+            },
+            "concept": "AML compliance and fraud prevention"
+        },
+        {
+            "id": "F-CRISI-003",
+            "cat": "CRISI",
+            "tag": "F",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Indagine CONSOB su prodotti di investimento",
+            "scenario": "La CONSOB apre un'istruttoria sui tuoi prodotti di risparmio gestito. Hai 45 giorni per rispondere.",
+            "sx": {
+                "testo": "Risposta difensiva legale",
+                "effetti": {
+                    "trust": -16,
+                    "cash": -50,
+                    "eco": -5
+                }
+            },
+            "dx": {
+                "testo": "Collabori + sospendi temporaneamente",
+                "effetti": {
+                    "trust": 10,
+                    "cash": -30,
+                    "churn": 8,
+                    "eco": 4
+                }
+            },
+            "flags_set": {
+                "dx": [
+                    "regulatory_champion_flag"
+                ]
+            },
+            "concept": "Securities regulation compliance"
+        },
+        {
+            "id": "F-OPP-001",
+            "cat": "OPP",
+            "tag": "F",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Licenza PSD2 — livello di accesso",
+            "scenario": "Ottieni la licenza PSD2. Puoi scegliere il livello di accesso ai dati bancari degli utenti.",
+            "sx": {
+                "testo": "Licenza minima — sicuro",
+                "effetti": {
+                    "trust": 10,
+                    "cash": -20,
+                    "eco": 6
+                }
+            },
+            "dx": {
+                "testo": "Licenza completa — più dati",
+                "effetti": {
+                    "trust": 8,
+                    "cash": -50,
+                    "eco": 14,
+                    "utenti": 8
+                }
+            },
+            "concept": "PSD2 licensing and data access"
+        },
+        {
+            "id": "F-OPP-002",
+            "cat": "OPP",
+            "tag": "F",
+            "fase": 2,
+            "fase_lock": false,
+            "nome": "Prodotto di micro-lending",
+            "scenario": "Lanci un prodotto di micro-credito per i tuoi utenti. Alto potenziale di ricavi, alto rischio regolatorio.",
+            "sx": {
+                "testo": "Non ora — aspetti Fase 3",
+                "effetti": {
+                    "note": "Opportunità rimandata. Nessun effetto immediato."
+                }
+            },
+            "dx": {
+                "testo": "Lanci subito con criteri conservativi",
+                "effetti": {
+                    "cash": 25,
+                    "trust": 6,
+                    "utenti": 8,
+                    "eco": 5,
+                    "note": "Default rate da monitorare."
+                }
+            },
+            "concept": "Fintech credit products and regulation"
+        },
+        {
+            "id": "F-OPP-003",
+            "cat": "OPP",
+            "tag": "F",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Acquisizione da istituto bancario europeo",
+            "scenario": "Una banca europea offre il doppio del valore di IPO stimato. Indipendenza vs liquidità immediata.",
+            "sx": {
+                "testo": "Rifiuti — IPO indipendente",
+                "effetti": {
+                    "valore": 40,
+                    "note": "Investor Patience -12. Il mercato rispetta."
+                }
+            },
+            "dx": {
+                "testo": "Accetti",
+                "effetti": {
+                    "note": "Ending: Strategic Exit — Banca Europea."
+                }
+            },
+            "concept": "Fintech M&A and strategic exit"
+        },
+        {
+            "id": "F-ETICO-001",
+            "cat": "ETICO",
+            "tag": "F",
+            "fase": 1,
+            "fase_lock": false,
+            "nome": "Credit scoring con proxy discriminatori",
+            "scenario": "Il tuo modello di scoring usa variabili proxy che correlano con etnia e area geografica. Performa meglio ma discrimina sistematicamente.",
+            "sx": {
+                "testo": "Mantieni il modello",
+                "effetti": {
+                    "cash": 12,
+                    "trust": -18,
+                    "note": "Violazione potenziale Equal Credit Opportunity."
+                }
+            },
+            "dx": {
+                "testo": "Rimuovi i proxy — accetti performance minore",
+                "effetti": {
+                    "cash": 6,
+                    "trust": 16,
+                    "churn": 8
+                }
+            },
+            "concept": "Algorithmic discrimination in credit scoring"
+        },
+        {
+            "id": "F-ETICO-002",
+            "cat": "ETICO",
+            "tag": "F",
+            "fase": 3,
+            "fase_lock": false,
+            "nome": "Lending predatorio su utenti vulnerabili",
+            "scenario": "Il tuo algoritmo di micro-credito identifica come migliori clienti persone con storico di insolvenza breve. Stai prestando a chi non può permetterselo.",
+            "sx": {
+                "testo": "Ottimizzi per il profitto",
+                "effetti": {
+                    "cash": 35,
+                    "trust": -22,
+                    "note": "Violazione Consumer Credit Directive."
+                }
+            },
+            "dx": {
+                "testo": "Income-based cap sul lending",
+                "effetti": {
+                    "cash": 15,
+                    "trust": 18,
+                    "churn": 10,
+                    "eco": 6
+                }
+            },
+            "concept": "Responsible lending and consumer protection"
+        }
+    ]
+}
